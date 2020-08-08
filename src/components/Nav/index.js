@@ -9,7 +9,7 @@ const Nav = () => {
         <div>
             <Query query={NAV_QUERY} id={null}>
                 {({data: {nav, categories}}) => {
-                    const desktopImageUrl =
+                    const desktopimageUrlImageUrl =
                         process.env.NODE_ENV !== "development"
                             ? nav.navlogo.url
                             : process.env.REACT_APP_BACKEND_URL + nav.navlogo.url;

@@ -9,10 +9,6 @@ const Homepage = () => {
     return (
         <Query query={HOMEPAGE_QUERY} id={id}>
             {({data: {homepage}}) => {
-                const imageUrl =
-                    process.env.NODE_ENV !== "development"
-                        ? homepage.heroimage.url
-                        : process.env.REACT_APP_BACKEND_URL + homepage.heroimage.url;
                 return (
                     <div>
                         <div className="bg--gradient"></div>
