@@ -1,24 +1,15 @@
+@import './nav/nav';
 @import './homepage/banner';
-@import './reset';
-
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url("https://ijadams.s3.amazonaws.com/FONTS/HelveticaNeue.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'HelveticaNeue-Light';
-  src: url("https://ijadams.s3.amazonaws.com/FONTS/HelveticaNeue-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'HelveticaNeue-Bold';
-  src: url("https://ijadams.s3.amazonaws.com/FONTS/HelveticaNeue-Bold.ttf") format("truetype");
-}
+@import './homepage/home';
 
 body {
-  font-family: 'HelveticaNeue', cursive !important;
-  ul.uk-navbar-nav {
-    font-family: cursive !important;
+  font-family: 'Heebo', sans-serif;
+  button {
+    border-radius: 3px !important;
+    font-weight: 400 !important;
+    letter-spacing: 1px !important;
+  }
+  p, h1, h2, h3 {
+    font-family: 'Heebo', sans-serif;
   }
 }

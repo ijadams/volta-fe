@@ -1,0 +1,30 @@
+nav {
+  background: transparent !important;
+  padding: 0.5rem 4rem;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  .mobile {
+    display: none;
+    img {
+      width: 40px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0.5rem 1rem;
+    .mobile {
+      display: block !important;
+    }
+    .desktop {
+      display: none;
+    }
+  }
+  a {
+   &:hover {
+     color: black !important;
+   }
+  }
+  img {
+    max-width: 160px;
+  }
+}

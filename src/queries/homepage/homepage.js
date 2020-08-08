@@ -7,6 +7,9 @@ const HOMEPAGE_QUERY = gql`
             heroimage {
                 url
             }
+            subherotext
+            cta_button_1
+            cta_button_2
         }
     }
 `;

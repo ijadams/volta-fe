@@ -15,14 +15,15 @@ const Homepage = () => {
                         : process.env.REACT_APP_BACKEND_URL + homepage.heroimage.url;
                 return (
                     <div>
-                        <section class="hero">
-                            <div
-                                id="banner"
-                                className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-                                data-src={imageUrl}
-                                data-srcset={imageUrl}
-                                data-uk-img
-                            >
+                        <div className="bg--gradient"></div>
+                        <section className="hero">
+                            <div>
+                                <h1 className="uk-text-lead">{homepage.herotext}</h1>
+                                <p>{homepage.subherotext}</p>
+                                <div className="button--container">
+                                    <a href=""><button className="uk-button uk-button-default one">{homepage.cta_button_1}</button></a>
+                                    <a href=""><button className="uk-button uk-button-default two">{homepage.cta_button_2}</button></a>
+                                </div>
                             </div>
                         </section>
                     </div>
