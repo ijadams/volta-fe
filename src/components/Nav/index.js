@@ -23,7 +23,7 @@ const Nav = () => {
                                 <div className="uk-navbar-left">
                                     <ul className="uk-navbar-nav">
                                         <li className="desktop">
-                                            <Link to="/"><img src={desktopImageUrl}/></Link>
+                                            <Link to="/"><img src={desktopimageUrlImageUrl}/></Link>
                                         </li>
                                         <li className="mobile">
                                             <Link to="/"><img src={mobileImageUrl}/></Link>
