@@ -23,10 +23,10 @@ const Nav = () => {
                                 <div className="uk-navbar-left">
                                     <ul className="uk-navbar-nav">
                                         <li className="desktop">
-                                            <Link to="/"><img src={desktopimageUrlImageUrl}/></Link>
+                                            <Link to="/"><img alt="4-Forty Logo" src={desktopimageUrlImageUrl}/></Link>
                                         </li>
                                         <li className="mobile">
-                                            <Link to="/"><img src={mobileImageUrl}/></Link>
+                                            <Link to="/"><img alt="4-Forty Logo" src={mobileImageUrl}/></Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -46,7 +46,7 @@ const Nav = () => {
                                             );
                                         })}
                                         <li>
-                                            <a href="">
+                                            <a href="http://apple.com">
                                                 <button className="uk-button uk-button-default uk-button-secondary">sign
                                                     up
                                                 </button>
