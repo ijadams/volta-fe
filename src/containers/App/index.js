@@ -3,7 +3,6 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Nav from "../../components/Nav";
-import Articles from "../Articles";
 import Article from "../Article";
 import Category from "../Category";
 import Homepage from "../Homepage";

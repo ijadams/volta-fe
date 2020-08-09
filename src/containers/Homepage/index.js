@@ -35,7 +35,7 @@ const Homepage = () => {
                                 </div>
                             </div>
                             <div className="half">
-                                <h1>test</h1>
+                                {/*<h1>test</h1>*/}
                             </div>
                         </section>
                         <section className="hero--sub right">
