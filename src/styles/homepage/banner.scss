@@ -3,6 +3,7 @@ section.hero {
   align-items: center;
   justify-content: center;
   min-height: 40vh;
+  padding-top: 8rem;
   div {
     text-align: center;
   }
@@ -19,7 +20,7 @@ section.hero {
   p {
     padding-top: 1.8rem;
     color: #333;
-    font-size: 1.116rem;
+    font-size: 1.222rem;
     width: 33%;
     margin: 0 auto;
   }
@@ -31,6 +32,8 @@ section.hero {
     letter-spacing: 0px !important;
     font-weight: 500 !important;
     font-size: 1rem;
+    min-width: 150px !important;
+    min-height: 50px !important;
     &.two {
       background: #abffdb !important;
       border-color: #abffdb;
