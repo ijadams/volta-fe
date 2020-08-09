@@ -7,3 +7,37 @@
   z-index: -1;
   background: linear-gradient(rgb(255, 252, 244) 50%, rgb(255, 255, 255) 100%);
 }
+
+.hero--sub {
+  min-height: 80vh;
+  display: flex;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    flex: 1;
+  }
+}
+
+.ipad {
+  background: url("https://res.cloudinary.com/ia-interactive/image/upload/v1596932140/chrome-2_lri3um.png") no-repeat;
+  width: 50vw;
+  height: 50vh;
+  background-size: contain;
+  max-width: 800px;
+  iframe {
+    padding-top: 5%;
+    height: 100%;
+    width: 100%;
+    div#omniplayer {
+      box-shadow: 3px 8px 25px -8px rgba(0,0,0,0.41);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
