@@ -29,8 +29,10 @@ const Homepage = () => {
                             </div>
                         </section>
                         <section className="hero--sub left">
-                            <div className="half ipad uk-cover-container">
-                                <iframe src="https://omniplayer.myomni.live/?k=demo4&amp;v=Tedx~TEDx_1_1.mp4" allowFullScreen="allowfullscreen"></iframe>
+                            <div className="half uk-cover-container">
+                                <div className="ipad">
+                                    <iframe src="https://omniplayer.myomni.live/?k=demo4&amp;v=Tedx~TEDx_1_1.mp4" allowFullScreen="allowfullscreen"></iframe>
+                                </div>
                             </div>
                             <div className="half">
                                 <h1>test</h1>
