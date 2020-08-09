@@ -3,6 +3,12 @@
 @import './homepage/home';
 @import './footer/footer';
 
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Heebo', sans-serif;
   button {

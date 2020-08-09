@@ -6,6 +6,9 @@
   height: 200vh;
   z-index: -1;
   background: linear-gradient(rgb(255, 252, 244) 50%, rgb(255, 255, 255) 100%);
+  @media screen and (max-width: 768px) {
+    height: 450px;
+  }
 }
 
 .chrome--container {
@@ -26,6 +29,7 @@
     font-size: 2.4rem;
     line-height: 110%;
     width: 50%;
+
   }
   .uk-padding-large {
     padding: 5rem !important;
@@ -39,6 +43,19 @@
     @media screen and (max-width: 768px) {
       width: 100%;
       flex: 0 0 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    height: 66vh;
+    max-height: inherit !important;
+    &.chrome--mega--container {
+      height: 300px !important;
+    }
+    h2 {
+      width: auto;
+    }
+    .uk-padding-large {
+      padding: 2rem !important;
     }
   }
 }
@@ -56,8 +73,8 @@
     width: 100%;
   }
   @media screen and (max-width: 768px) {
-    width: 100vw;
-    height: calc(100vw / 2);
+    width: 90vw;
+    height: calc(90vw / 2);
   }
   @media screen and (min-width: 1600px) {
     box-shadow: none !important;
@@ -100,11 +117,20 @@
 
 .mega-frame {
   width: 100vw;
-  min-height: 400px;
+  min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  @media screen and (max-width: 1100px){
+    min-height: 500px;
+  }
+  @media screen and (max-width: 768px){
+    min-height: 400px;
+  }
+  @media screen and (max-width: 550px){
+    min-height: 300px;
+  }
   iframe {
     position: absolute;
     height: 100%;
@@ -123,5 +149,8 @@
   h3 {
     font-weight: 700;
     font-size: xx-large;
+    @media screen and (max-width: 768px){
+      font-size: x-large;
+    }
   }
 }

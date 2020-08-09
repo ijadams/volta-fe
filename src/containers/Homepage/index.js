@@ -28,7 +28,7 @@ const Homepage = () => {
                                 </div>
                             </div>
                         </section>
-                        <section className="hero--sub">
+                        <section className="hero--sub chrome--mega--container">
                             <div className="half uk-cover-container left chrome--container">
                                 <div className="chrome uk-box-shadow-large">
                                     <iframe title="4-forty Demo Video"
