@@ -6,7 +6,7 @@ const Query = ({ children, query, id }) => {
     variables: { id: id }
   });
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <div className="loader"></div>;
   if (error) return <p>Error: {JSON.stringify(error)}</p>;
   return children({ data });
 };
