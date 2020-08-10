@@ -66,7 +66,7 @@ const Homepage = () => {
                         <section className="hero--sub right">
                             <div className="half">
                                 <div className="uk-padding-large">
-                                    <img alt="quotes" class="quotes"
+                                    <img alt="quotes" className="quotes"
                                          src="https://res.cloudinary.com/ia-interactive/image/upload/v1597007824/quote_kyjd9b.png"/>
                                     <ReactMarkdown source={homepage.section_4_text}/>
                                 </div>

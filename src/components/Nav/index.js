@@ -14,14 +14,17 @@ export class Nav extends Component {
     }
 
     componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-
+        console.log(window);
         // subscribe to home component messages
         this.subscription = navService.getNav().subscribe(data => {
             this.setState({
                 active: data.active
             })
         });
+
+        setTimeout(() => {
+            window.addEventListener('scroll', this.handleScroll);
+        }, 300);
     }
 
     componentWillUnmount() {
@@ -39,6 +42,7 @@ export class Nav extends Component {
     };
 
     handleScroll = (event) => {
+        console.log(event)
         this.setState({
             scrolled: window.scrollY !== 0
         });
