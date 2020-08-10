@@ -68,7 +68,7 @@ export class Nav extends Component {
                                         </ul>
                                     </div>
 
-                                    <div className="uk-navbar-right uk-visible@s">
+                                    <div className="uk-navbar-right desktop">
                                         <ul className="uk-navbar-nav">
                                             {categories.map((category, i) => {
                                                 return (
@@ -93,7 +93,7 @@ export class Nav extends Component {
                                         </ul>
                                     </div>
 
-                                    <div className="uk-navbar-right uk-hidden@s">
+                                    <div className="uk-navbar-right mobile">
                                         <div className={`nav--button ${this.state.active ? "uk-hidden" : ""}`}
                                              onClick={this.openNav}><span uk-icon="icon: menu; ratio: 2"></span>
                                         </div>
