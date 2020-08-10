@@ -42,7 +42,6 @@ export class Nav extends Component {
     };
 
     handleScroll = (event) => {
-        console.log(event)
         this.setState({
             scrolled: window.scrollY !== 0
         });
@@ -69,10 +68,10 @@ export class Nav extends Component {
                                         <ul className="uk-navbar-nav">
                                             <li className="desktop">
                                                 <Link to="/"><img alt="4-Forty Logo"
-                                                                  src={desktopimageUrlImageUrl}/></Link>
+                                                                  src="http://localhost:1337/uploads/4forty_logo_BW_horz_copy_300ccb0181.png"/></Link>
                                             </li>
                                             <li className="mobile">
-                                                <Link to="/"><img alt="4-Forty Logo" src={mobileImageUrl}/></Link>
+                                                <Link to="/"><img alt="4-Forty Logo" src="http://localhost:1337/uploads/logo192_07a5f55591.png"/></Link>
                                             </li>
                                         </ul>
                                     </div>
