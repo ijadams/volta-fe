@@ -52,8 +52,14 @@ export class Nav extends Component {
             <div>
                 <Query query={NAV_QUERY} id={null}>
                     {({data: {nav, categories}}) => {
-                        const desktopimageUrlImageUrl = process.env.REACT_APP_BACKEND_URL + nav.navlogo.url;
-                        const mobileImageUrl = process.env.REACT_APP_BACKEND_URL + nav.navlogomobile.url
+                        const desktopimageUrlImageUrl =
+                            process.env.NODE_ENV !== "development"
+                                ? nav.navlogo.url
+                                : process.env.REACT_APP_BACKEND_URL + nav.navlogo.url;
+                        const mobileImageUrl =
+                            process.env.NODE_ENV !== "development"
+                                ? nav.navlogomobile.url
+                                : process.env.REACT_APP_BACKEND_URL + nav.navlogomobile.url;;
                         return (
                             <div>
                                 <nav className={`uk-navbar-container ${this.state.scrolled ? "active" : ''}`} data-uk-navbar>
