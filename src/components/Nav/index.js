@@ -93,6 +93,7 @@ export class Nav extends Component {
                                             })}
                                             <li>
                                                 <a href={nav.signup_link}
+                                                   rel="noopener noreferrer"
                                                    target="_blank">
                                                     <button
                                                         className="uk-button uk-button-default uk-button-secondary">
@@ -131,6 +132,7 @@ export class Nav extends Component {
                                                 <a
                                                     href={nav.signup_link}
                                                     target="_blank"
+                                                    rel="noopener noreferrer"
                                                     className="uk-link-reset"
                                                 >
                                                     {nav.signup_text}
