@@ -14,6 +14,9 @@ const HOMEPAGE_QUERY = gql`
             section_3_text
             section_4_text
             iframe_hero_markdown
+            iframe_section_2_markdown
+            iframe_section_3_markdown
+            iframe_section_4_markdown
         }
     }
 `;

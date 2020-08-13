@@ -15,7 +15,7 @@
   animation: AnimationName 30s ease infinite;
 
   @media screen and (max-width: 768px) {
-    height: 450px;
+    height: 100vh;
   }
 }
 
@@ -153,6 +153,10 @@
   }
 }
 
+#sectionTwo {
+  margin-top: 1rem;
+}
+
 .mega-frame {
   width: 100vw;
   min-height: 600px;
@@ -173,6 +177,15 @@
   }
   @media screen and (max-width: 550px) {
     min-height: 300px;
+  }
+
+  &.bottom {
+    @media screen and (max-width: 550px) {
+      min-height: 240px;
+      &:first-of-type {
+        margin-top: 1rem;
+      }
+    }
   }
 
   iframe {

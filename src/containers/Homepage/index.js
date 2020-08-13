@@ -25,7 +25,7 @@ export class Homepage extends Component {
                                         <h1 className="uk-text-lead">{homepage.herotext}</h1>
                                         <p>{homepage.subherotext}</p>
                                         <div className="button--container">
-                                            <a href="#section--two">
+                                            <a href="#sectionTwo">
                                                 <button
                                                     className="uk-button uk-button-default two">{homepage.cta_button_text}</button>
                                             </a>
@@ -33,15 +33,13 @@ export class Homepage extends Component {
                                     </div>
                                 </section>
 
-                                <section id="section--two" className="mega-frame" dangerouslySetInnerHTML={{__html: homepage.iframe_hero_markdown}}>
+                                <section id="sectionTwo" className="mega-frame"
+                                         dangerouslySetInnerHTML={{__html: homepage.iframe_hero_markdown}}>
                                 </section>
 
                                 <section className="hero--sub chrome--mega--container">
                                     <div className="half uk-cover-container left chrome--container chrome--container">
-                                        <div className="chrome uk-box-shadow-large">
-                                            <iframe title="4-forty Demo Video"
-                                                    src="https://omniplayer.myomni.live/?k=demo4&amp;v=Tedx~TEDx_1_1.mp4"
-                                                    allowFullScreen="allowfullscreen"></iframe>
+                                        <div className="chrome uk-box-shadow-large" dangerouslySetInnerHTML={{__html: homepage.iframe_section_2_markdown}}>
                                         </div>
                                     </div>
                                     <div className="half">
@@ -84,6 +82,9 @@ export class Homepage extends Component {
                                         <div className="logos"></div>
                                     </div>
                                 </section>
+
+                                <section className="mega-frame bottom" dangerouslySetInnerHTML={{__html: homepage.iframe_section_3_markdown}}></section>
+                                <section className="mega-frame bottom" dangerouslySetInnerHTML={{__html: homepage.iframe_section_4_markdown}}></section>
 
                                 <section className="hero--sub last-call">
                                     <div>
