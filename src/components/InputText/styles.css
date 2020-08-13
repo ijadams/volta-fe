@@ -1,5 +1,7 @@
 .inputText {
+  display: block;
   height: 34px;
+  width: 100%;
   margin-top: 9px;
   padding-left: 10px;
   background-size: 0 !important;
@@ -7,8 +9,10 @@
   border-radius: 2.5px;
   line-height: 34px;
   font-size: 13px;
-  font-family: 'Lato' !important;
   box-shadow: 0px 1px 1px rgba(104, 118, 142, 0.05);
+  margin: 0 auto;
+  padding: 0;
+  text-indent: 10px;
 }
 
 /* .inputText:focus {

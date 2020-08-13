@@ -14,7 +14,6 @@ export class Nav extends Component {
     }
 
     componentDidMount() {
-        console.log(window);
         // subscribe to home component messages
         this.subscription = navService.getNav().subscribe(data => {
             this.setState({

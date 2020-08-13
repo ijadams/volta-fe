@@ -27,7 +27,7 @@ function InputFileDetails(props) {
       <div className="detailBanner">
         <div>
           {props.file.url && (
-            <a href={url} className="externalLink" target="_blank">
+            <a href={url} className="externalLink" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-external-link-square-alt" />
               <span style={{ fontSize: '13px' }}>Open in a new tab</span>
             </a>

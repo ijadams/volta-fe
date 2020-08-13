@@ -10,9 +10,7 @@ import { findIndex, get, map, replace, set } from 'lodash';
 import { Link } from 'react-router-dom';
 
 import Button from '../../components/Button';
-import FormDivider from '../../components/FormDivider';
 import Input from '../../components/InputsIndex';
-import SocialLink from '../../components/SocialLink';
 
 // Utils
 import auth from '../../utils/auth';
@@ -20,6 +18,9 @@ import request from '../../utils/request';
 
 import form from './forms.json';
 import './styles.css';
+
+import {navService} from "../../services";
+import InputErrors from "../../components/InputErrors";
 
 class AuthPage extends React.Component {
     state = { value: {}, errors: [], didCheckErrors: false };
@@ -39,16 +40,16 @@ class AuthPage extends React.Component {
 
         switch (this.props.match.params.authType) {
             case 'login':
-                requestURL = 'http://localhost:1337/auth/local';
+                requestURL = process.env.REACT_APP_BACKEND_URL + '/auth/local';
                 break;
             case 'register':
-                requestURL = 'http://localhost:1337/auth/local/register';
+                requestURL = process.env.REACT_APP_BACKEND_URL + '/auth/local/register';
                 break;
             case 'reset-password':
-                requestURL = 'http://localhost:1337/auth/reset-password';
+                requestURL = process.env.REACT_APP_BACKEND_URL + '/auth/reset-password';
                 break;
             case 'forgot-password':
-                requestURL = 'http://localhost:1337/auth/forgot-password';
+                requestURL = process.env.REACT_APP_BACKEND_URL + 'auth/forgot-password';
                 break;
             default:
         }
@@ -75,21 +76,23 @@ class AuthPage extends React.Component {
 
         // This line is required for the callback url to redirect your user to app
         if (this.props.match.params.authType === 'forgot-password') {
-            set(body, 'url', 'http://localhost:3000/auth/reset-password');
+            set(body, 'url', process.env.REACT_APP_BACKEND_URL + '/auth/reset-password');
         }
 
         request(requestURL, { method: 'POST', body: this.state.value })
             .then(response => {
                 auth.setToken(response.jwt, body.rememberMe);
                 auth.setUserInfo(response.user, body.rememberMe);
+                navService.setUser(response.user);
                 this.redirectUser();
             })
             .catch(err => {
-                console.log(err);
-                const errors = [
-                    { name: 'identifier', errors: [err.response.payload.message] },
-                ];
-                this.setState({ didCheckErrors: !this.state.didCheckErrors, errors });
+                if (err) {
+                    const errors = [
+                        { name: 'identifier', errors: [err.response.payload.message] },
+                    ];
+                    this.setState({ didCheckErrors: !this.state.didCheckErrors, errors });
+                }
             });
     };
 
@@ -139,18 +142,10 @@ class AuthPage extends React.Component {
                 ? { marginTop: '3.2rem' }
                 : { marginTop: '.9rem' };
         const inputs = get(form, ['views', this.props.match.params.authType], []);
-        const providers = ['facebook', 'github', 'google', 'twitter']; // To remove a provider from the list just delete it from this array...
 
         return (
             <div className="authPage">
                 <div className="wrapper">
-                    <div className="headerContainer">
-                        {this.props.match.params.authType === 'register' ? (
-                            <span>Welcome !</span>
-                        ) : (
-                            <span>Welcome !</span>
-                        )}
-                    </div>
                     <div className="headerDescription">
                         {this.props.match.params.authType === 'register' ? (
                             <span>Please register to access the app.</span>
@@ -160,48 +155,39 @@ class AuthPage extends React.Component {
                     </div>
                     <div className="formContainer" style={divStyle}>
                         <div className="container-fluid">
-                            <div className="row">
-                                <div className="col-md-12">
-                                    {providers.map(provider => (
-                                        <SocialLink provider={provider} key={provider} />
-                                    ))}
-                                </div>
-                            </div>
-                            <FormDivider />
+
                             <form onSubmit={this.handleSubmit}>
-                                <div className="row" style={{ textAlign: 'start' }}>
-                                    {map(inputs, (input, key) => (
-                                        <Input
-                                            autoFocus={key === 0}
-                                            customBootstrapClass={get(input, 'customBootstrapClass')}
-                                            didCheckErrors={this.state.didCheckErrors}
-                                            errors={get(
-                                                this.state.errors,
-                                                [
-                                                    findIndex(this.state.errors, ['name', input.name]),
-                                                    'errors',
-                                                ],
-                                                []
-                                            )}
-                                            key={get(input, 'name')}
-                                            label={get(input, 'label')}
-                                            name={get(input, 'name')}
-                                            onChange={this.handleChange}
-                                            placeholder={get(input, 'placeholder')}
-                                            type={get(input, 'type')}
-                                            validations={{ required: true }}
-                                            value={get(this.state.value, get(input, 'name'), '')}
-                                        />
-                                    ))}
-                                    <div className="col-md-12 buttonContainer">
-                                        <Button
-                                            label="Submit"
-                                            style={{ width: '100%' }}
-                                            primary
-                                            type="submit"
-                                        />
+                                <fieldset className="uk-fieldset">
+
+                                    <legend className="uk-legend">Sign In</legend>
+
+                                    <div className="uk-grid-row-large" style={{ textAlign: 'start' }}>
+                                        {map(inputs, (input, key) => (
+                                            <Input
+                                                autoFocus={key === 0}
+                                                key={get(input, 'name')}
+                                                label={get(input, 'label')}
+                                                name={get(input, 'name')}
+                                                onChange={this.handleChange}
+                                                placeholder={get(input, 'placeholder')}
+                                                type={get(input, 'type')}
+                                                validations={{ required: true }}
+                                                value={get(this.state.value, get(input, 'name'), '')}
+                                            />
+                                        ))}
+                                        <p className="uk-text-danger">{this.state.errors.length ? 'Invalid username and/or password please try again.' : ''}</p>
+                                        <div className="">
+                                            <Button
+                                                label="Submit"
+                                                style={{ width: '100%' }}
+                                                primary
+                                                className="uk-button uk-button-primary"
+                                                type="submit"
+                                            />
+                                        </div>
                                     </div>
-                                </div>
+
+                                </fieldset>
                             </form>
                         </div>
                     </div>

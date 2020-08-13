@@ -2,7 +2,7 @@
   "views": {
     "forgot-password": [
       {
-        "customBootstrapClass": "col-md-12",
+        "customUKClass": "uk-grid-column-medium",
         "label": "Enter your email",
         "name": "email",
         "type": "email",
@@ -11,20 +11,20 @@
     ],
     "login": [
       {
-        "customBootstrapClass": "col-md-12",
+        "customUKClass": "uk-grid-column-medium",
         "label": "Username",
         "name": "identifier",
         "type": "text",
         "placeholder": "johndoe@gmail.com"
       },
       {
-        "customBootstrapClass": "col-md-12",
+        "customUKClass": "uk-grid-column-medium",
         "label": "Password",
         "name": "password",
         "type": "password"
       },
       {
-        "customBootstrapClass": "col-md-6",
+        "customUKClass": "col-md-6",
         "label": "Remember me",
         "name": "rememberMe",
         "type": "checkbox"
@@ -32,26 +32,26 @@
     ],
     "register": [
       {
-        "customBootstrapClass": "col-md-12",
+        "customUKClass": "uk-grid-column-medium",
         "label": "Username",
         "name": "username",
         "type": "text",
         "placeholder": "Bob"
       },
       {
-        "customBootstrapClass": "col-md-12",
+        "customUKClass": "uk-grid-column-medium",
         "label": "Password",
         "name": "password",
         "type": "password"
       },
       {
-        "customBootstrapClass": "col-md-12",
+        "customUKClass": "uk-grid-column-medium",
         "label": "Confirm Password",
         "name": "confirmPassword",
         "type": "password"
       },
       {
-        "customBootstrapClass": "col-md-12",
+        "customUKClass": "uk-grid-column-medium",
         "label": "Email",
         "name": "email",
         "placeholder": "johndoe@gmail.com",
@@ -60,13 +60,13 @@
     ],
     "reset-password": [
       {
-        "customBootstrapClass": "col-md-12",
+        "customUKClass": "uk-grid-column-medium",
         "name": "password",
         "type": "password",
         "label": "Password"
       },
       {
-        "customBootstrapClass": "col-md-12",
+        "customUKClass": "uk-grid-column-medium",
         "name": "passwordConfirmation",
         "type": "password",
         "label": "Confirm Password"

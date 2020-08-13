@@ -40,7 +40,7 @@ class InputCheckboxWithErrors extends React.Component {
     const {
       autoFocus,
       className,
-      customBootstrapClass,
+      customUKClass,
       disabled,
       errorsClassName,
       errorsStyle,
@@ -83,7 +83,7 @@ class InputCheckboxWithErrors extends React.Component {
       <div
         className={cn(
           'inputCheckboxContainer',
-          customBootstrapClass,
+          customUKClass,
           !isEmpty(className) && className
         )}
         style={style}
@@ -125,7 +125,7 @@ class InputCheckboxWithErrors extends React.Component {
 InputCheckboxWithErrors.defaultProps = {
   autoFocus: false,
   className: '',
-  customBootstrapClass: 'col-md-3',
+  customUKClass: 'col-md-3',
   didCheckErrors: false,
   disabled: false,
   onBlur: () => {},
@@ -152,7 +152,7 @@ InputCheckboxWithErrors.defaultProps = {
 InputCheckboxWithErrors.propTypes = {
   autoFocus: PropTypes.bool,
   className: PropTypes.string,
-  customBootstrapClass: PropTypes.string,
+  customUKClass: PropTypes.string,
   deactivateErrorHighlight: PropTypes.bool,
   didCheckErrors: PropTypes.bool,
   disabled: PropTypes.bool,

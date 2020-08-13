@@ -111,7 +111,7 @@ class InputEmailWithErrors extends React.Component {
       <div
         className={cn(
           'inputEmailWithErrors',
-          this.props.customBootstrapClass,
+          this.props.customUKClass,
           !isEmpty(this.props.className) && this.props.className
         )}
         style={style}
@@ -156,7 +156,7 @@ class InputEmailWithErrors extends React.Component {
 InputEmailWithErrors.defaultProps = {
   autoFocus: false,
   className: '',
-  customBootstrapClass: 'col-md-6',
+  customUKClass: 'col-md-6',
   deactivateErrorHighlight: false,
   didCheckErrors: false,
   disabled: false,
@@ -183,7 +183,7 @@ InputEmailWithErrors.defaultProps = {
 InputEmailWithErrors.propTypes = {
   autoFocus: PropTypes.bool,
   className: PropTypes.string,
-  customBootstrapClass: PropTypes.string,
+  customUKClass: PropTypes.string,
   deactivateErrorHighlight: PropTypes.bool,
   didCheckErrors: PropTypes.bool,
   disabled: PropTypes.bool,

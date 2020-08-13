@@ -63,7 +63,7 @@ class InputTextWithErrors extends React.Component {
     const {
       autoFocus,
       className,
-      customBootstrapClass,
+      customUKClass,
       deactivateErrorHighlight,
       disabled,
       errorsClassName,
@@ -104,7 +104,7 @@ class InputTextWithErrors extends React.Component {
       <div
         className={cn(
           'inputTextWithErrors',
-          customBootstrapClass,
+          customUKClass,
           !isEmpty(className) && className
         )}
         style={style}
@@ -149,7 +149,7 @@ class InputTextWithErrors extends React.Component {
 InputTextWithErrors.defaultProps = {
   autoFocus: false,
   className: '',
-  customBootstrapClass: 'col-md-6',
+  customUKClass: 'col-md-6',
   deactivateErrorHighlight: false,
   didCheckErrors: false,
   disabled: false,
@@ -176,7 +176,7 @@ InputTextWithErrors.defaultProps = {
 InputTextWithErrors.propTypes = {
   autoFocus: PropTypes.bool,
   className: PropTypes.string,
-  customBootstrapClass: PropTypes.string,
+  customUKClass: PropTypes.string,
   deactivateErrorHighlight: PropTypes.bool,
   didCheckErrors: PropTypes.bool,
   disabled: PropTypes.bool,

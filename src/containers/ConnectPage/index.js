@@ -31,7 +31,6 @@ class ConnectPage extends React.Component {
                 this.redirectUser('/');
             })
             .catch(err => {
-                console.log(err.response.payload);
                 this.redirectUser('/auth/login');
             });
     }

@@ -93,7 +93,7 @@ class InputPasswordWithErrors extends React.Component {
       <div
         className={cn(
           'inputPasswordWithErrors',
-          this.props.customBootstrapClass,
+          this.props.customUKClass,
           !isEmpty(this.props.className) && this.props.className
         )}
         style={style}
@@ -137,7 +137,7 @@ class InputPasswordWithErrors extends React.Component {
 InputPasswordWithErrors.defaultProps = {
   autoFocus: false,
   className: '',
-  customBootstrapClass: 'col-md-6',
+  customUKClass: 'col-md-6',
   deactivateErrorHighlight: false,
   didCheckErrors: false,
   disabled: false,
@@ -163,7 +163,7 @@ InputPasswordWithErrors.defaultProps = {
 InputPasswordWithErrors.propTypes = {
   autoFocus: PropTypes.bool,
   className: PropTypes.string,
-  customBootstrapClass: PropTypes.string,
+  customUKClass: PropTypes.string,
   deactivateErrorHighlight: PropTypes.bool,
   didCheckErrors: PropTypes.bool,
   disabled: PropTypes.bool,

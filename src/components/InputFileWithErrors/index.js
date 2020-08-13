@@ -38,7 +38,7 @@ class InputFileWithErrors extends React.Component {
   render() {
     const {
       className,
-      customBootstrapClass,
+      customUKClass,
       inputDescription,
       inputDescriptionClassName,
       inputDescriptionStyle,
@@ -58,7 +58,7 @@ class InputFileWithErrors extends React.Component {
       <div
         className={cn(
           'inputFileWithErrorsContainer',
-          customBootstrapClass,
+          customUKClass,
           className !== '' && className,
         )}
         style={style}
@@ -94,7 +94,7 @@ class InputFileWithErrors extends React.Component {
 
 InputFileWithErrors.defaultProps = {
   className: '',
-  customBootstrapClass: 'col-md-6',
+  customUKClass: 'col-md-6',
   inputDescription: '',
   inputDescriptionClassName: '',
   inputDescriptionStyle: {},
@@ -108,7 +108,7 @@ InputFileWithErrors.defaultProps = {
 
 InputFileWithErrors.propTypes = {
   className: PropTypes.string,
-  customBootstrapClass: PropTypes.string,
+  customUKClass: PropTypes.string,
   inputDescription: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.func,
