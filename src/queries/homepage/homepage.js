@@ -8,12 +8,12 @@ const HOMEPAGE_QUERY = gql`
                 url
             }
             subherotext
-            cta_button_1
-            cta_button_2
+            cta_button_text
             section_1_text
             section_2_text
             section_3_text
             section_4_text
+            iframe_hero_markdown
         }
     }
 `;
