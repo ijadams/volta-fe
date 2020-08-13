@@ -28,8 +28,16 @@ const Homepage = () => {
                                 </div>
                             </div>
                         </section>
+
+                        <section className="mega-frame">
+                            <iframe className="uk-box-shadow-large"
+                                    title="4-forty Demo Video"
+                                    src="https://omniplayer.myomni.live/?k=demo4&amp;v=Tedx~TEDx_1_1.mp4"
+                                    allowFullScreen="allowfullscreen"></iframe>
+                        </section>
+
                         <section className="hero--sub chrome--mega--container">
-                            <div className="half uk-cover-container left chrome--container">
+                            <div className="half uk-cover-container left chrome--container chrome--container">
                                 <div className="chrome uk-box-shadow-large">
                                     <iframe title="4-forty Demo Video"
                                             src="https://omniplayer.myomni.live/?k=demo4&amp;v=Tedx~TEDx_1_1.mp4"
@@ -74,12 +82,6 @@ const Homepage = () => {
                             <div className="half">
                                 <div className="logos"></div>
                             </div>
-                        </section>
-
-                        <section className="mega-frame">
-                            <iframe title="4-forty Demo Video"
-                                    src="https://omniplayer.myomni.live/?k=demo4&amp;v=Tedx~TEDx_1_1.mp4"
-                                    allowFullScreen="allowfullscreen"></iframe>
                         </section>
 
                         <section className="hero--sub last-call">
