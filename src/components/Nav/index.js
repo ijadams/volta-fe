@@ -59,14 +59,17 @@ export class Nav extends Component {
                         const mobileImageUrl =
                             process.env.NODE_ENV !== "development"
                                 ? nav.navlogomobile.url
-                                : process.env.REACT_APP_BACKEND_URL + nav.navlogomobile.url;;
+                                : process.env.REACT_APP_BACKEND_URL + nav.navlogomobile.url;
+                        ;
                         return (
                             <div>
-                                <nav className={`uk-navbar-container ${this.state.scrolled ? "active" : ''}`} data-uk-navbar>
+                                <nav className={`uk-navbar-container ${this.state.scrolled ? "active" : ''}`}
+                                     data-uk-navbar>
                                     <div className="uk-navbar-left">
                                         <ul className="uk-navbar-nav">
                                             <li className="desktop">
-                                                <Link to="/"><img alt="4-Forty Logo" src={desktopimageUrlImageUrl}/></Link>
+                                                <Link to="/"><img alt="4-Forty Logo"
+                                                                  src={desktopimageUrlImageUrl}/></Link>
                                             </li>
                                             <li className="mobile">
                                                 <Link to="/"><img alt="4-Forty Logo" src={mobileImageUrl}/></Link>
@@ -89,10 +92,11 @@ export class Nav extends Component {
                                                 );
                                             })}
                                             <li>
-                                                <a href="http://apple.com">
+                                                <a href={nav.signup_link}
+                                                   target="_blank">
                                                     <button
-                                                        className="uk-button uk-button-default uk-button-secondary">sign
-                                                        up
+                                                        className="uk-button uk-button-default uk-button-secondary">
+                                                        {nav.signup_text}
                                                     </button>
                                                 </a>
                                             </li>
@@ -124,12 +128,13 @@ export class Nav extends Component {
                                                 );
                                             })}
                                             <li>
-                                                <Link
-                                                    to={`/sign-up`}
+                                                <a
+                                                    href={nav.signup_link}
+                                                    target="_blank"
                                                     className="uk-link-reset"
                                                 >
-                                                    Sign Up
-                                                </Link>
+                                                    {nav.signup_text}
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
