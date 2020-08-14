@@ -6,7 +6,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { findIndex, get, map, replace, set } from 'lodash';
+import { get, map, replace, set } from 'lodash';
 import { Link } from 'react-router-dom';
 
 import Button from '../../components/Button';
@@ -20,7 +20,6 @@ import form from './forms.json';
 import './styles.css';
 
 import {navService} from "../../services";
-import InputErrors from "../../components/InputErrors";
 
 class AuthPage extends React.Component {
     state = { value: {}, errors: [], didCheckErrors: false };
