@@ -146,7 +146,7 @@ class AuthPage extends React.Component {
             <div className="authPage">
                 <div className="wrapper">
                     <div className="headerDescription">
-                        <img src="https://ijadams.s3.amazonaws.com/4forty/logo_horz.png"/>
+                        <img alt="Logo" src="https://ijadams.s3.amazonaws.com/4forty/logo_horz.png"/>
                     </div>
                     <div className="formContainer" style={divStyle}>
                         <div className="container-fluid">
