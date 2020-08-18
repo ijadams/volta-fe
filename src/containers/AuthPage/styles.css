@@ -29,7 +29,7 @@
     font-weight: 600;
 }
 
-.headerContainer, img {
+.headerContainer img {
     margin-top: 1px;
     height: 40px;
 }
@@ -83,7 +83,7 @@
     left: 30px; bottom: 30px;
 }
 
-.logoContainer, img {
+.logoContainer img {
     height: 60px;
     padding-bottom: 1rem;
 }
