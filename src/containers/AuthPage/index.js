@@ -146,20 +146,13 @@ class AuthPage extends React.Component {
             <div className="authPage">
                 <div className="wrapper">
                     <div className="headerDescription">
-                        {this.props.match.params.authType === 'register' ? (
-                            <span>Please register to access the app.</span>
-                        ) : (
-                            ''
-                        )}
+                        <img src="https://ijadams.s3.amazonaws.com/4forty/logo_horz.png"/>
                     </div>
                     <div className="formContainer" style={divStyle}>
                         <div className="container-fluid">
-
                             <form onSubmit={this.handleSubmit}>
                                 <fieldset className="uk-fieldset">
-
                                     <legend className="uk-legend">Sign In</legend>
-
                                     <div className="uk-grid-row-large" style={{ textAlign: 'start' }}>
                                         {map(inputs, (input, key) => (
                                             <Input

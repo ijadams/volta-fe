@@ -71,14 +71,6 @@
 
 .linkContainer {
     padding-top: 18px;
-> a {
-    color: #262931;
-    font-size: 13px;
-&:hover, &:active, &:focus {
-                        text-decoration: none;
-                        outline: 0;
-                    }
-}
 }
 
 .linkContainer, a {
@@ -92,7 +84,8 @@
 }
 
 .logoContainer, img {
-    height: 34px;
+    height: 60px;
+    padding-bottom: 1rem;
 }
 
 .separator {
