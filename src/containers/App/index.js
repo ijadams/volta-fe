@@ -44,7 +44,7 @@ export class App extends Component {
     render() {
         return (
             <div className="App">
-                <div className={`${this.state.user == null ? "uk-hidden" : ""}`}>
+                <div className={`${window.location.pathname !== '/' ? "uk-hidden" : ""}`}>
                     <Nav />
                 </div>
                 <main className={`${this.state.loaded ? "uk-hidden" : ""}`}>
