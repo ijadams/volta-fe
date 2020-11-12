@@ -19,7 +19,9 @@
     "react-markdown": "^4.3.1",
     "react-moment": "^0.9.7",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.0"
+    "react-scripts": "^3.4.0",
+    "react-vivus": "0.0.2",
+    "vivus": "^0.4.5"
   },
   "scripts": {
     "develop": "react-scripts start",
@@ -42,5 +44,8 @@
       "last 1 safari version"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "2.1.2"
+  }
 }

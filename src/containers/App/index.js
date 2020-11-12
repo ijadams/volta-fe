@@ -49,7 +49,8 @@ export class App extends Component {
                 </div>
                 <main className={`${this.state.loaded ? "uk-hidden" : ""}`}>
                     <Switch>
-                        <PrivateRoute path="/" component={Homepage} exact />
+                        <Route path="/" component={Homepage} />
+                        <PrivateRoute path="/shows" component={Homepage} exact />
                         <Route path="/auth/:authType/:id?" component={AuthPage} />
                         <Route exact path="/connect/:provider" component={ConnectPage} />
                         <PrivateRoute path="/article/:id" component={Article} exact />
