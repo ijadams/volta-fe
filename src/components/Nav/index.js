@@ -51,15 +51,6 @@ export class Nav extends Component {
             <div>
                 <Query query={NAV_QUERY} id={null}>
                     {({data: {nav, categories}}) => {
-                        const desktopimageUrlImageUrl =
-                            process.env.NODE_ENV !== "development"
-                                ? nav.navlogo.url
-                                : process.env.REACT_APP_BACKEND_URL + nav.navlogo.url;
-                        const mobileImageUrl =
-                            process.env.NODE_ENV !== "development"
-                                ? nav.navlogomobile.url
-                                : process.env.REACT_APP_BACKEND_URL + nav.navlogomobile.url;
-                        ;
                         return (
                             <div>
                                 <nav className={`uk-navbar-container ${this.state.scrolled ? "active" : ''}`}
@@ -67,11 +58,10 @@ export class Nav extends Component {
                                     <div className="uk-navbar-left">
                                         <ul className="uk-navbar-nav">
                                             <li className="desktop">
-                                                <Link to="/"><img alt="4-Forty Logo"
-                                                                  src={desktopimageUrlImageUrl}/></Link>
+                                                <Link to="/"><img alt="4-Forty Logo" src="https://ijadams.s3.amazonaws.com/volta/volta-2-orange-min.png"/></Link>
                                             </li>
                                             <li className="mobile">
-                                                <Link to="/"><img alt="4-Forty Logo" src={mobileImageUrl}/></Link>
+                                                <Link to="/"><img alt="4-Forty Logo" src="https://ijadams.s3.amazonaws.com/volta/volta-2-orange-min.png"/></Link>
                                             </li>
                                         </ul>
                                     </div>
