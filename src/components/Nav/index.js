@@ -57,10 +57,10 @@ export class Nav extends Component {
                                     <div className="uk-navbar-left">
                                         <ul className="uk-navbar-nav">
                                             <li className="desktop">
-                                                <Link to="/"><img alt="4-Forty Logo" src="https://ijadams.s3.amazonaws.com/volta/volta-2-orange-min.png"/></Link>
+                                                <Link to="/"><img alt="4-Forty Logo" src="https://res.cloudinary.com/ia-interactive/image/upload/v1605303777/volta-2-orange-no-word_ittaff.png"/></Link>
                                             </li>
                                             <li className="mobile">
-                                                <Link to="/"><img alt="4-Forty Logo" src="https://ijadams.s3.amazonaws.com/volta/volta-2-orange-min.png"/></Link>
+                                                <Link to="/"><img alt="4-Forty Logo" src="https://res.cloudinary.com/ia-interactive/image/upload/v1605303777/volta-2-orange-no-word_ittaff.png"/></Link>
                                             </li>
                                         </ul>
                                     </div>
