@@ -49,13 +49,13 @@ export class App extends Component {
                 </div>
                 <main className={`${this.state.loaded ? "uk-hidden" : ""}`}>
                     <Switch>
-                        <Route path="/" component={Homepage} />
+                        <Route exact path="/" component={Homepage} />
                         <PrivateRoute path="/shows" component={Homepage} exact />
                         <Route path="/auth/:authType/:id?" component={AuthPage} />
                         <Route exact path="/connect/:provider" component={ConnectPage} />
                         <PrivateRoute path="/article/:id" component={Article} exact />
                         <PrivateRoute path="/category/:id" component={Category} exact />
-                        <Route path="" component={NotFoundPage} />
+                        <Route component={NotFoundPage} />
                     </Switch>
                 </main>
                 <Footer />

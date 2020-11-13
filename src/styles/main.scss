@@ -33,3 +33,40 @@ body {
   background: white;
   transition: 0.2s ease-in-out;
 }
+
+
+.logo--holder {
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
+  img {
+    width: 300px;
+  }
+}
+
+.not-found {
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    padding: 0 5%;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    color: transparent;
+    background: url("https://res.cloudinary.com/ia-interactive/image/upload/v1605291118/stars-67616_1920_acajqi.jpg") center center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 50%;
+    transition: background-size .3s ease;
+  }
+  h1:hover {
+    background-size: 100%;
+  }
+}
+

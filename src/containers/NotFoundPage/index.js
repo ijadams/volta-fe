@@ -9,7 +9,12 @@ import React from 'react';
 function NotFoundPage(props) {
     return (
         <div>
-            <p>The page you're looking for doesn't exist.</p>
+            <div className="logo--holder">
+                <a href="/"><img alt="logo" src="https://ijadams.s3.amazonaws.com/volta/volta-black-outline-orange.svg"/></a>
+            </div>
+            <div className="not-found">
+                <h1>The page you're looking for doesn't exist.</h1>
+            </div>
         </div>
     );
 }
