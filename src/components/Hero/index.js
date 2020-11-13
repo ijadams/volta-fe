@@ -12,7 +12,6 @@ const HeroComponent = ({ data }) => {
   }; 
 
   const handleVideoCallback = () => {
-    console.log('here');
     setTimeout(() => {
       setVideoLoadedState(true);
     }, 300);
@@ -28,11 +27,15 @@ const HeroComponent = ({ data }) => {
                file: 'https://ijadams.s3.amazonaws.com/volta/volta-black-outline-orange.svg',
                type: 'oneByOne',
                animTimingFunction: 'EASE',
-               duration: 175,
+               duration: 100,
              }}
              callback={handleVivusCallback}
            />           
             <video src="https://ijadams.s3.amazonaws.com/volta/crooked-coast-5-s.mp4" onPlaying={handleVideoCallback} loop muted autoPlay></video> 
+            <div class="ocean">
+              <div class="wave"></div>
+              <div class="wave"></div>
+            </div>
         </div>   
     </div>
   );

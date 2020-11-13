@@ -7,22 +7,28 @@
   align-items: center;
   background: black;
   position: relative;
+
   video {
     height: 100%;
     width: 100%;
   }
+
   #hero--vivus {
     position: absolute;
+
     svg {
       width: 25vw;
+
       @media screen and (max-width: 1200px) {
         width: 33vw;
       }
+
       path.st0 {
         transition: fill 0.2s ease-in !important;
         fill: transparent !important;
       }
     }
+
     &.active {
       svg {
         path.st0 {
@@ -33,32 +39,111 @@
     }
   }
 }
-.box{
+
+.box {
   &.visible {
     #home--section--one {
+      h1 {
+        opacity: 1;
+      }
       p {
         opacity: 1;
+        transform: translateY(0px);
+      }
+      span.reveal {
+        transform: skewy(0deg) rotate(0deg) translatey(0%) scaley(1);
       }
     }
   }
 }
 
 #home--section--one {
-  padding: 3rem;
+  padding: 5rem 3rem;
   text-align: center;
   background: #070707;
   h1 {
     font-weight: 700;
     letter-spacing: 1px;
-    background: linear-gradient(90deg, rgba(215,53,1,1) 0%, rgba(255,190,118,1) 20%, rgba(246,229,141,1) 50%, rgba(255,190,118,1) 80%, rgba(215,53,1,1) 100%);
+    background: linear-gradient(to right, #d31027, #ea384d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: all 2s cubic-bezier(.19,1,.22,1);
+    transition-delay: 0.1s;
   }
+
+  span.text--mask {
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    padding: 0 1em;
+    width: 100%;
+  }
+  span.reveal {
+    display: block;
+    white-space: nowrap;
+    transition: all 2s cubic-bezier(.19,1,.22,1);
+    transform: skewy(2deg) translatey(100%) scaley(1.2);
+    transform-origin: 0 0;
+  }
+
   p {
+    position: relative;
+    width: 100%;
     text-align: center;
     opacity: 0;
-    transition: 0.3s ease-in;
     color: white;
     font-size: 1.5rem;
+    font-weight: 200;
+    padding-top: 1rem;
+  }
+}
+
+.ocean {
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  background: #070707;
+}
+
+.wave {
+  background: url('https://res.cloudinary.com/ia-interactive/image/upload/v1605283818/wave_pwarpc.svg') repeat-x;
+  position: absolute;
+  top: -100px;
+  width: 6400px;
+  height: 100px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -100px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
   }
 }
