@@ -6,6 +6,11 @@ nav {
   letter-spacing: 1px;
   height: 105px;
 
+  border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(90deg, rgba(215,53,1,1) 0%, rgba(255,190,118,1) 20%, rgba(246,229,141,1) 50%, rgba(255,190,118,1) 80%, rgba(215,53,1,1) 100%);
+
   .mobile {
     display: none;
   }
@@ -16,9 +21,9 @@ nav {
     z-index: 5;
     display: flex !important;
     transition: background-color 0.5s ease-in;
-    background: #222222 !important;
+    background: #070707 !important;
     &.active {
-      background: #222222 !important;
+      background: #070707 !important;
     }
   }
   @media screen and (max-width: 768px) {

@@ -20,10 +20,8 @@ export class Nav extends Component {
                 active: data.active
             })
         });
+        window.addEventListener('scroll', this.handleScroll, { passive: true });
 
-        setTimeout(() => {
-            window.addEventListener('scroll', this.handleScroll);
-        }, 300);
     }
 
     componentWillUnmount() {
@@ -32,15 +30,16 @@ export class Nav extends Component {
     }
 
 
-    openNav = () => {
+    openNav() {
         navService.toggleNav(true);
     };
 
-    closeNav = () => {
+    closeNav() {
         navService.toggleNav(false);
     };
 
-    handleScroll = (event) => {
+    handleScroll(event) {
+        console.log(event);
         this.setState({
             scrolled: window.scrollY !== 0
         });

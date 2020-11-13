@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import Query from "../../components/Query";
 import HOMEPAGE_QUERY from "../../queries/homepage/homepage";
 import HeroComponent from '../../components/Hero/index';
+import HomeSectionOne from '../../components/HomeSections/HomeSectionOne'
 import TargetComponent from '../../components/TargetComponent';
 
 export class Homepage extends Component {
@@ -19,12 +20,12 @@ export class Homepage extends Component {
                 <Query query={HOMEPAGE_QUERY} id={null}>
                     {({data: {homepage}}) => {
                         return (
-                            <div>
+                            <div>   
                                 <HeroComponent data={homepage} />
-                                <div className="test"></div>
-                                <div className="header visible">Higher Order Component - Occlusion Culling</div>
-                                <div className="body body--center">
-                                    <TargetComponent />
+                                <div className="home--body">
+                                    <TargetComponent>
+                                        <HomeSectionOne/>
+                                    </TargetComponent>
                                     <TargetComponent />
                                     <TargetComponent />
                                     <TargetComponent />

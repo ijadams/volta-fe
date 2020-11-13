@@ -25,7 +25,7 @@ const HeroComponent = ({ data }) => {
              className={`vivus ${loaded ? "active" : ""}`}
              id="hero--vivus"
              option={{
-               file: 'https://ijadams.s3.amazonaws.com/volta/volta-black-outline.svg',
+               file: 'https://ijadams.s3.amazonaws.com/volta/volta-black-outline-orange.svg',
                type: 'oneByOne',
                animTimingFunction: 'EASE',
                duration: 175,
