@@ -9,11 +9,24 @@ nav {
   border-bottom: 10px solid;
   border-image-slice: 1;
   border-width: 5px;
-  border-image-source: linear-gradient(90deg, rgba(215,53,1,1) 0%, #d31027 33%, #ea384d 66%, rgba(215,53,1,1) 100%);
+  border-image-source: linear-gradient(90deg, rgba(215, 53, 1, 1) 0%, #d31027 33%, #ea384d 66%, rgba(215, 53, 1, 1) 100%);
+
+  button.uk-button.uk-button-default.uk-button-secondary {
+    background-color: none !important;
+  }
+  .uk-navbar-nav>li>a {
+    background-color: none;
+  }
+  button.uk-button.uk-button-default.uk-button-secondary:hover {
+    color: #d73501 !important;
+    border-color: #d73501 !important;
+    font-weight: 700;
+  }
 
   .mobile {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
     position: fixed !important;
     width: 92%;
@@ -22,24 +35,32 @@ nav {
     display: flex !important;
     transition: background-color 0.5s ease-in;
     background: #070707 !important;
+
     &.active {
       background: #070707 !important;
     }
   }
+
   @media screen and (max-width: 768px) {
     padding: 0.5rem 1rem;
+
     .mobile {
       display: block !important;
     }
+
     .desktop {
       display: none;
     }
   }
+
   a {
-   &:hover {
-     color: black !important;
-   }
+    transition: 0.4 ease-in-out;
+
+    &:hover {
+      color: #d73501 !important;
+    }
   }
+
   img {
     height: 60px;
     width: auto;
@@ -66,11 +87,13 @@ nav {
       visibility: visible;
       opacity: 1;
     }
+
     ul {
       list-style: none;
       margin: 0 auto;
       padding: 0
     }
+
     ul li {
       margin: 0 auto;
       padding: 0;
@@ -79,10 +102,12 @@ nav {
       text-transform: uppercase;
       font-weight: 500;
       font-size: 3.618rem;
+
       a {
         color: white !important;
         opacity: 0.8;
       }
+
       a:hover {
         color: white !important;
         opacity: 1;
@@ -95,6 +120,7 @@ nav {
     z-index: 1;
     right: 2rem;
     top: 2rem;
+
     &:hover {
       cursor: pointer;
     }

@@ -3,7 +3,7 @@ import React from "react";
 const HomeSectionOne = () => {
   return (
     <div>
-        <div id="home--section--one">
+        <div id="home--section--one" className="home--section">
             <h1>
                 Performance that brings creators and audience together
             </h1>
@@ -15,17 +15,7 @@ const HomeSectionOne = () => {
                     </span>
                 </span>
             </p>
-
-      
-            {/* <p>
-            You choose which camera angle you watch as if you were pressed up against the barricade live in person. 
-            </p>
-            <p>
-            Video and audio remain synchronized at all times. Zero Latency.
-            </p>
-            <p>
-            You decide which angle to watch for a true live concert experience from the comfort of your own home, safe space or from outer space.  (Rocketship not included.)
-            </p> */}
+            
         </div>   
     </div>
   );

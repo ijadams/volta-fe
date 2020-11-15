@@ -7,6 +7,11 @@
   justify-content: center;
   padding: 0;
   margin: 0;
+  margin-top: 2rem;
+  border-top: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(90deg, rgba(215,53,1,1) 0%, #d31027 33%, #ea384d 66%, rgba(215,53,1,1) 100%);
   .container {
     width: 100%;
     text-align: center;
@@ -21,8 +26,12 @@
   ul li {
     display: inline-block;
     svg {
-      color: #ee3a74;
+      color: white;
       height: 25px;
+      &:hover {
+        color: #d31027;
+        cursor: pointer;
+      }
     }
   }
 

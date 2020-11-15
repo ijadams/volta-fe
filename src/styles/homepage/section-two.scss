@@ -1,0 +1,33 @@
+
+#home--section--two {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5rem 0;
+    height: 50vh;
+    > div {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .left {
+      padding-right: 5rem;
+      transition: all 2s cubic-bezier(.19, 1, .22, 1);
+      transform: translateX(-200px);
+      opacity: 0;
+      img {
+        height: 100%;
+      }
+    }
+    .right {
+      padding: 0 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > div {
+        height: calc(50vh - 10rem);
+      }
+    }
+  }
+  
