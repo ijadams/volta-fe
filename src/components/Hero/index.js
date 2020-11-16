@@ -32,9 +32,9 @@ const HeroComponent = ({ data }) => {
              callback={handleVivusCallback}
            />           
             <video src="https://ijadams.s3.amazonaws.com/volta/crooked-coast-5-s.mp4" onPlaying={handleVideoCallback} loop muted autoPlay></video> 
-            <div class="ocean">
-              <div class="wave"></div>
-              <div class="wave"></div>
+            <div className="ocean">
+              <div className="wave"></div>
+              <div className="wave"></div>
             </div>
         </div>   
     </div>
