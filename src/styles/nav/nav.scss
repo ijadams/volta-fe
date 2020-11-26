@@ -27,6 +27,19 @@ nav {
     display: none;
   }
 
+  .omni {
+    padding-left: 0;
+    span {
+      font-weight: 700;
+      margin-left: -1rem;
+    }
+    img {
+      margin-left: 1rem;
+      width: 150px;
+      height: auto;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     position: fixed !important;
     width: 92%;

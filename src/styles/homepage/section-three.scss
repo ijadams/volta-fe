@@ -4,7 +4,7 @@ div#home--section--three {
     }
 
     .box {
-        &.visible {
+        &.seen {
             h1 {
                 opacity: 1;
             }
@@ -42,7 +42,7 @@ div#home--section--three {
 .item--container {
     > div {
         position: relative;
-        &.visible {
+        &.seen {
             &:hover {
                 cursor: pointer;
                 p {

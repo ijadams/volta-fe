@@ -62,6 +62,9 @@ export class Nav extends Component {
                                             <li className="mobile">
                                                 <Link to="/"><img alt="4-Forty Logo" src="https://res.cloudinary.com/ia-interactive/image/upload/v1605303777/volta-2-orange-no-word_ittaff.png"/></Link>
                                             </li>
+                                            <li className="omni">
+                                                <Link to=""><span>+</span><img alt="omni-logo" src="https://res.cloudinary.com/drnfburmr/image/upload/v1606349328/Omnilive_LogoWhite300_lwomot.png"/></Link>
+                                            </li>
                                         </ul>
                                     </div>
 
