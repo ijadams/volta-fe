@@ -10,7 +10,7 @@ html, body {
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background: #070707;
+  background: #000;
 }
 
 body {
@@ -72,5 +72,14 @@ body {
   h1:hover {
     background-size: 100%;
   }
+}
+
+main, footer {
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+main.hide, footer.hide {
+  opacity: 0;
 }
 

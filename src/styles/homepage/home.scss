@@ -14,10 +14,21 @@
         transform: skewy(0deg) rotate(0deg) translatey(0%) scaley(1);
       }
     }
+
     #home--section--two {
       .left {
         transform: translateX(0);
         opacity: 0.8;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: block;
+        position: relative;
+        .left, .right {
+          padding: 2rem 0;
+          display: block;
+          width: 100%;
+        }
       }
     }
   }
@@ -26,7 +37,7 @@
 .home--section {
   padding: 5rem 3rem;
   text-align: center;
-  background: #070707;
+  background: #000000;
 
   h1 {
     font-weight: 700;

@@ -68,33 +68,6 @@ export class Nav extends Component {
                                         </ul>
                                     </div>
 
-                                    <div className="uk-navbar-right desktop">
-                                        <ul className="uk-navbar-nav">
-                                            {categories.map((category, i) => {
-                                                return (
-                                                    <li key={category.id}>
-                                                        <Link
-                                                            to={`/category/${category.id}`}
-                                                            className="uk-link-reset"
-                                                        >
-                                                            {category.name}
-                                                        </Link>
-                                                    </li>
-                                                );
-                                            })}
-                                            <li>
-                                                <a href={nav.signup_link}
-                                                   rel="noopener noreferrer"
-                                                   target="_blank">
-                                                    <button
-                                                        className="uk-button uk-button-default uk-button-secondary">
-                                                        {nav.signup_text}
-                                                    </button>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
                                     <div className="uk-navbar-right mobile">
                                         <div className={`nav--button ${this.state.active ? "uk-hidden" : ""}`}
                                              onClick={this.openNav}><span uk-icon="icon: menu; ratio: 2"></span>
@@ -130,6 +103,11 @@ export class Nav extends Component {
                                                 </a>
                                             </li>
                                         </ul>
+                                        <div className="logo--container">
+                                            <img
+                                              src="https://ijadams.s3.amazonaws.com/volta/volta-black-outline-orange.svg"
+                                              alt="volta nav logo"/>
+                                        </div>
                                     </div>
                                 </nav>
                             </div>

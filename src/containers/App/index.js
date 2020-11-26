@@ -47,7 +47,7 @@ export class App extends Component {
                 <div className={`${window.location.pathname !== '/' ? "uk-hidden" : ""}`}>
                     <Nav />
                 </div>
-                <main className={`${this.state.loaded ? "uk-hidden" : ""}`}>
+                <main className={`${this.state.loaded ? "hide" : ""}`}>
                     <Switch>
                         <Route exact path="/" component={Homepage} />
                         <PrivateRoute path="/shows" component={Homepage} exact />
@@ -58,7 +58,7 @@ export class App extends Component {
                         <Route component={NotFoundPage} />
                     </Switch>
                 </main>
-                <Footer />
+                <Footer className={`${this.state.loaded ? "hide" : ""}`} />
             </div>
         );
     }
