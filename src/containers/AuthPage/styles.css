@@ -3,9 +3,29 @@
     justify-content: space-around;
     text-align: center;
     padding: 170px 0;
-    background: #FAFAFB;
     height: 100vh;
     -webkit-font-smoothing: antialiased;
+    background: linear-gradient(270deg, #070707, #1a1a1a);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 .wrapper {
@@ -41,6 +61,7 @@
     line-height: 18px;
     color: #333740;
     font-size: 14px;
+    margin-bottom: 4rem;
 }
 
 .formContainer {
@@ -50,9 +71,13 @@
     margin-bottom: 0;
     padding: 33px 15px 15px 15px;
     border-radius: 2px;
-    border-top: 2px solid #1C5DE7;
+    border-top: 2px solid #d73501;
     background-color: #FFFFFF;
-    box-shadow: 0 2px 4px 0 #E3E9F3;
+    box-shadow: 0 3px 5px 0 rgba(255,255,255,0.25);
+}
+
+button.uk-button.uk-button-primary {
+    background: black !important;
 }
 
 .loginButton {
@@ -74,8 +99,12 @@
 }
 
 .linkContainer, a {
-    color: #262931;
+    color: #fff;
     font-size: 13px;
+}
+
+.linkContainer, a:hover {
+    color: #fff;
 }
 
 .logoContainer {
@@ -93,4 +122,10 @@
     height: 2px;
     margin: 10px 0;
     background-color: rgba(14, 22, 34, 0.04);
+}
+
+
+legend {
+    font-weight: 100;
+    text-transform: uppercase;
 }

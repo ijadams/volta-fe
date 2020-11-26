@@ -1,6 +1,7 @@
 @import './nav/nav';
 @import './homepage/hero';
 @import './homepage/home';
+@import './homepage/section-one';
 @import './homepage/section-two';
 @import './homepage/section-three';
 @import './footer/footer';
@@ -10,7 +11,7 @@ html, body {
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background: #000;
+  background: #070707;
 }
 
 body {
