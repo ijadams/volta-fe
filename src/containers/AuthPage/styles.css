@@ -1,9 +1,10 @@
 .authPage {
+    position: relative;
     display: flex;
     justify-content: space-around;
     text-align: center;
     padding: 170px 0;
-    height: 100vh;
+    height: 500px;
     -webkit-font-smoothing: antialiased;
     background: linear-gradient(270deg, #070707, #1a1a1a);
     background-size: 400% 400%;

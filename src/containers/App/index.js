@@ -9,7 +9,7 @@ import AuthPage from "../AuthPage";
 import NotFoundPage from "../NotFoundPage";
 import { navService } from "../../services";
 import PrivateRoute from "../../containers/PrivateRoute";
-import { About } from "../../components/About";
+import { About } from "../../containers/About";
 import ShowsContainer from "../../containers/Shows";
 
 export class App extends Component {
@@ -44,9 +44,7 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className={`${window.location.pathname !== "/" ? "uk-hidden" : ""}`}>
-          <Nav/>
-        </div>
+        <Nav/>
         <main className={`${this.state.loaded ? "hide" : ""}`}>
           <Switch>
             <Route exact path="/" component={Homepage}/>
