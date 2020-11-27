@@ -114,22 +114,14 @@ export class Nav extends Component {
                                     <div className={`nav--overlay ${this.state.active ? "active" : ""}`}>
                                         <ul>
                                             <li>
-                                                <a
-                                                  href="/about"
-                                                  rel="noopener noreferrer"
-                                                  className="uk-link-reset"
-                                                >
+                                                <Link to="/about">
                                                     About
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                  href="/shows"
-                                                  rel="noopener noreferrer"
-                                                  className="uk-link-reset"
-                                                >
+                                                <Link to="/shows">
                                                     Shows
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
                                                 <a
