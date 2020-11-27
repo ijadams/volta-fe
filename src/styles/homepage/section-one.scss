@@ -5,6 +5,13 @@
     button {
       background: none;
       border-color: white;
+      transition: 0.1s ease-in;
+      font-weight: 700 !important;
+      &:hover {
+        background: #d73501;
+        border-color: #d73501;
+        color: #070707;
+      }
     }
   }
 }
