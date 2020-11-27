@@ -13,11 +13,11 @@ const Shows = ({ shows }) => {
         return <div className="show--row" key={show.id}>
                   <div className='show--image' style={{ backgroundImage: "url(" + imageUrl + ")" }}>
                     <div className="watch-now">
-                      <div className="container">
-                        <Link to={`/shows/${show.id}`} className="uk-link-reset">
+                      <Link to={`/shows/${show.id}`} className="uk-link-reset">
+                        <div className="container">
                           <p>Watch {show.show_name} now</p>
-                        </Link>
-                      </div>
+                        </div>
+                      </Link>
                     </div>
                   </div>
                   <h2>{show.show_name}</h2>

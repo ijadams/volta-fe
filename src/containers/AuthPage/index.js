@@ -96,7 +96,7 @@ class AuthPage extends React.Component {
     };
 
     redirectUser = () => {
-        this.props.history.push('/');
+        this.props.history.push(this.props.history.location.state.from.pathname || '/');
     };
 
     /**

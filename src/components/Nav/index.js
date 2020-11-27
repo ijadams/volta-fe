@@ -39,7 +39,6 @@ export class Nav extends Component {
     };
 
     handleScroll(event) {
-        console.log(event);
         this.setState({
             scrolled: window.scrollY !== 0
         });
