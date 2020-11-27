@@ -11,6 +11,7 @@ import { navService } from "../../services";
 import PrivateRoute from "../../containers/PrivateRoute";
 import { About } from "../../containers/About";
 import ShowsContainer from "../../containers/Shows";
+import ShowContainer from '../../containers/Show';
 
 export class App extends Component {
 
@@ -49,7 +50,8 @@ export class App extends Component {
           <Switch>
             <Route exact path="/" component={Homepage}/>
             <Route exact path="/about" component={About}/>
-            <PrivateRoute path="/shows" component={ShowsContainer} exact/>
+            <Route path="/shows" component={ShowsContainer} exact/>
+            <PrivateRoute path="/shows/:id?" component={ShowContainer} exact/>
             <Route path="/auth/:authType/:id?" component={AuthPage}/>
             <PrivateRoute path="/category/:id" component={Category} exact/>
             <Route component={NotFoundPage}/>

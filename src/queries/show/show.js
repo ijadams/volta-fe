@@ -1,17 +1,17 @@
 import gql from "graphql-tag";
 
-const SHOWS_QUERY = gql`
-  query Shows {
-    shows {
+const SHOW_QUERY = gql`
+  query Shows($id: ID!) {
+    show(id: $id) {
       id
       show_name
       show_content
       show_image {
         url
       }
-      created_at
+      published_at
     }
   }
 `;
 
-export default SHOWS_QUERY;
+export default SHOW_QUERY;
