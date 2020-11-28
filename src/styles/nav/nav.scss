@@ -46,9 +46,16 @@ nav {
 
   .omni {
     padding-left: 0;
+    a:hover {
+      color: white !important;
+      span {
+        color: white !important;
+      }
+    }
     span {
       font-weight: 700;
       margin-left: -1rem;
+      color: white !important;
     }
     img {
       margin-left: 1rem;
@@ -117,6 +124,7 @@ nav {
     &.active {
       visibility: visible;
       opacity: 1;
+      z-index: 2;
     }
 
     .logo--container {
@@ -174,7 +182,7 @@ nav {
 
   .nav--button {
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     right: 1rem;
     top: 2.5rem;
     .uk-icon {

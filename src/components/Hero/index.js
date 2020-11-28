@@ -8,13 +8,13 @@ const HeroComponent = ({ data }) => {
   const handleVivusCallback = () => {
     setTimeout(() => {
       setLoadedState(true);
-    }, 300);
+    }, 500);
   };
 
   const handleVideoCallback = () => {
     setTimeout(() => {
       setVideoLoadedState(true);
-    }, 300);
+    }, 500);
   };
 
   return (

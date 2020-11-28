@@ -21,7 +21,6 @@ export class Nav extends Component {
             })
         });
         window.addEventListener('scroll', this.handleScroll, { passive: true });
-
     }
 
     componentWillUnmount() {
@@ -62,7 +61,7 @@ export class Nav extends Component {
                                                 <Link to="/"><img alt="4-Forty Logo" src="https://res.cloudinary.com/ia-interactive/image/upload/v1605303777/volta-2-orange-no-word_ittaff.png"/></Link>
                                             </li>
                                             <li className="omni">
-                                                <Link to=""><span>+</span><img alt="omni-logo" src="https://res.cloudinary.com/drnfburmr/image/upload/v1606349328/Omnilive_LogoWhite300_lwomot.png"/></Link>
+                                                <a href="https://www.omnilive.tv/en/landing-page-us/" target="_blank" rel="noopener noreferrer"><span>+</span><img alt="omni-logo" src="https://res.cloudinary.com/drnfburmr/image/upload/v1606349328/Omnilive_LogoWhite300_lwomot.png"/></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -113,12 +112,12 @@ export class Nav extends Component {
 
                                     <div className={`nav--overlay ${this.state.active ? "active" : ""}`}>
                                         <ul>
-                                            <li>
+                                            <li onClick={this.closeNav}>
                                                 <Link to="/about">
                                                     About
                                                 </Link>
                                             </li>
-                                            <li>
+                                            <li onClick={this.closeNav}>
                                                 <Link to="/shows">
                                                     Shows
                                                 </Link>
