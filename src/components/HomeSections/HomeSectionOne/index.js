@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HomeSectionOne = () => {
   return (
@@ -19,7 +20,9 @@ const HomeSectionOne = () => {
         <p className="button--container">
           <span className="text--mask">
               <span className="reveal">
-                  <button className="uk-button uk-button-default uk-button-secondary">Get Tickets</button>
+                    <Link to={`/shows`} className="uk-link-reset"><button
+                      className="uk-button uk-button-default uk-button-secondary">View Shows</button>
+                    </Link>
               </span>
           </span>
         </p>
