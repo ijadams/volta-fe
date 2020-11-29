@@ -58,15 +58,15 @@
     transform: translatex(-50%);
     padding: 0 1em;
     width: 100%;
-    @media screen and (max-width: 768px) {
-      overflow: auto;
-      display: inline-block;
-      position: relative;
-      left: 0;
-      transform: none;
-      padding: 0 !important;
-      width: 100%;
-    }
+    //@media screen and (max-width: 768px) {
+    //  overflow: auto;
+    //  display: inline-block;
+    //  position: relative;
+    //  left: 0;
+    //  transform: none;
+    //  padding: 0 !important;
+    //  width: 100%;
+    //}
   }
 
   span.reveal {
@@ -75,7 +75,6 @@
     transition: all 2s cubic-bezier(.19, 1, .22, 1);
     transform: skewy(2deg) translatey(100%) scaley(1.2);
     transform-origin: 0 0;
-    opacity: 0;
     @media screen and (max-width: 768px) {
       display: inherit;
       white-space: inherit;
@@ -90,7 +89,6 @@
     position: relative;
     width: 100%;
     text-align: center;
-    opacity: 0;
     color: white;
     font-size: 1.5rem;
     font-weight: 200;
