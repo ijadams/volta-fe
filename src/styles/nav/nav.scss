@@ -10,6 +10,11 @@ nav {
   border-image-slice: 1;
   border-width: 5px;
   border-image-source: linear-gradient(90deg, rgba(215, 53, 1, 1) 0%, #d31027 33%, #ea384d 66%, rgba(215, 53, 1, 1) 100%);
+  @media screen and (max-width: 768px) {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+  }
 
   button.uk-button.uk-button-default.uk-button-secondary {
     background-color: none !important;
@@ -26,6 +31,7 @@ nav {
     background-color: none;
     font-weight: 700;
     color: white !important;
+    font-size: 2rem !important;
     &:hover {
       color: #ea384d !important;
     }
@@ -163,7 +169,7 @@ nav {
         display: inline-block;
         margin: 0;
         text-align: center;
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: 700;
         color: transparent !important;
         background: url("https://res.cloudinary.com/ia-interactive/image/upload/v1605291118/stars-67616_1920_acajqi.jpg") center center;

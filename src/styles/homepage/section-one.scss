@@ -1,5 +1,12 @@
 #home--section--one {
   background-image: linear-gradient(#000, #070707);
+  @media screen and (max-width: 768px) {
+    padding: 2rem;
+    padding-top: 4rem;
+    .button--container {
+      margin-top: 0 !important;
+    }
+  }
   .button--container {
     margin-top: 8rem;
     button {

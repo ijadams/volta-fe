@@ -14,19 +14,39 @@
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 .wrapper {
@@ -54,6 +74,7 @@
     margin-top: 1px;
     height: 40px;
 }
+
 .headerDescription {
     width: 416px;
     text-align: center;
@@ -74,7 +95,7 @@
     border-radius: 2px;
     border-top: 2px solid #d73501;
     background-color: #FFFFFF;
-    box-shadow: 0 3px 5px 0 rgba(255,255,255,0.25);
+    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.25);
 }
 
 button.uk-button.uk-button-primary {
@@ -110,7 +131,8 @@ button.uk-button.uk-button-primary {
 
 .logoContainer {
     position: absolute;
-    left: 30px; bottom: 30px;
+    left: 30px;
+    bottom: 30px;
 }
 
 .logoContainer img {
@@ -129,4 +151,18 @@ button.uk-button.uk-button-primary {
 legend {
     font-weight: 100;
     text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 768px) {
+    .authPage {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .headerDescription {
+        width: 200px;
+    }
+    .formContainer {
+        width: 300px;
+    }
 }
