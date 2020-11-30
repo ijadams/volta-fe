@@ -8,13 +8,13 @@ const HeroComponent = ({ data }) => {
   const handleVivusCallback = () => {
     setTimeout(() => {
       setLoadedState(true);
-    }, 500);
+    }, 300);
   };
 
   const handleVideoCallback = () => {
     setTimeout(() => {
       setVideoLoadedState(true);
-    }, 500);
+    }, 300);
   };
 
   return (
@@ -24,7 +24,7 @@ const HeroComponent = ({ data }) => {
           className={`vivus ${loaded ? "active" : ""}`}
           id="hero--vivus"
           option={{
-            file: "https://ijadams.s3.amazonaws.com/volta/volta-black-outline-orange.svg",
+            file: "https://res.cloudinary.com/drnfburmr/image/upload/v1606755433/volta-black-outline-orange_dquuyz.svg",
             type: "oneByOne",
             animTimingFunction: "EASE",
             duration: 100

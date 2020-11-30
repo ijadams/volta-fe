@@ -30,11 +30,6 @@
   #hero--vivus {
     position: absolute;
 
-    @media screen and (max-width: 580px) {
-      display: none;
-    }
-
-
     svg {
       width: 25vw;
 

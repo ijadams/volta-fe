@@ -135,7 +135,7 @@ export class Nav extends Component {
                                         </ul>
                                         <div className="logo--container">
                                             <img
-                                              src="https://ijadams.s3.amazonaws.com/volta/volta-black-outline-orange.svg"
+                                              src="https://res.cloudinary.com/drnfburmr/image/upload/v1606755433/volta-black-outline-orange_dquuyz.svg"
                                               alt="volta nav logo"/>
                                         </div>
                                     </div>

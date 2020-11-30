@@ -147,7 +147,7 @@ class AuthPage extends React.Component {
                 <div className="wrapper">
                     <div className="headerDescription">
                         <img
-                          src="https://ijadams.s3.amazonaws.com/volta/volta-black-outline-orange.svg"
+                          src="https://res.cloudinary.com/drnfburmr/image/upload/v1606755433/volta-black-outline-orange_dquuyz.svg"
                           alt="volta nav logo"/>                    </div>
                     <div className="formContainer" style={divStyle}>
                         <div className="container-fluid">

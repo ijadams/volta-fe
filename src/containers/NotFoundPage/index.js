@@ -11,7 +11,7 @@ function NotFoundPage(props) {
     <div>
       <div className="not--found--container">
         <div className="logo--holder">
-          <a href="/"><img alt="logo" src="https://ijadams.s3.amazonaws.com/volta/volta-black-outline-orange.svg"/></a>
+          <a href="/"><img alt="logo" src="https://res.cloudinary.com/drnfburmr/image/upload/v1606755433/volta-black-outline-orange_dquuyz.svg"/></a>
         </div>
         <div className="not-found">
           <h1>The page you're looking for doesn't exist.</h1>
