@@ -20,12 +20,13 @@
     }
   }
   @media screen and (max-width: 768px) {
-    min-height: 500px;
+    min-height: 300px;
+    padding-top: 50px;
     iframe {
-      height: 450px;
+      height: 200px;
     }
     h1, h1 span {
-      font-size: 2rem;
+      font-size: 1rem;
     }
   }
 }
