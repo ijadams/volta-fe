@@ -3,7 +3,32 @@
 import React from "react";
 import TargetComponent from "../../TargetComponent";
 
-const HomeSectionThree = () => {
+const HomeSectionThree = (props) => {
+  console.log(props);
+
+  const items = [];
+
+
+  for (const [index, show] of props.data.entries()) {
+    console.log(show);
+    const imageUrl =
+      process.env.NODE_ENV !== "development"
+        ? show.show_image.url
+        : process.env.REACT_APP_BACKEND_URL + show.show_image.url;
+
+    items.push(
+      <div className='item--container' key={index}>
+        <TargetComponent>
+          <div className='grid-img' style={{ backgroundImage: "url(" + imageUrl + ")" }}>
+            <div className='container'>
+              <p>{show.show_name}</p>
+            </div>
+          </div>
+        </TargetComponent>
+      </div>
+    );
+  }
+
   return (
     <div>
       <div id="home--section--three" className="home--section">
@@ -15,22 +40,7 @@ const HomeSectionThree = () => {
         </TargetComponent>
 
         <div className="grid-container">
-          <div className="item--container">
-            <TargetComponent>
-              <img className="grid-img"
-                   src="https://res.cloudinary.com/drnfburmr/image/upload/v1606505392/medium_Crooked_Coast_b3616fc863.jpg"
-                   alt="band image a"/>
-              <p>Crooked Coast</p>
-            </TargetComponent>
-          </div>
-          <div className="item--container">
-            <TargetComponent>
-              <img className="grid-img"
-                   src="https://res.cloudinary.com/drnfburmr/image/upload/v1606774572/test12312_t4k7ch.jpg"
-                   alt="band image 2"/>
-              <p>The Quins</p>
-            </TargetComponent>
-          </div>
+          {items}
         </div>
       </div>
     </div>
