@@ -4,13 +4,11 @@ import React from "react";
 import TargetComponent from "../../TargetComponent";
 
 const HomeSectionThree = (props) => {
-  console.log(props);
 
   const items = [];
 
 
   for (const [index, show] of props.data.entries()) {
-    console.log(show);
     const imageUrl =
       process.env.NODE_ENV !== "development"
         ? show.show_image.url
