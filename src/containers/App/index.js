@@ -48,7 +48,7 @@ export class App extends Component {
         <Nav/>
         <main className={`${this.state.loaded ? "hide" : ""}`}>
           <Switch>
-            <Route exact path="/" component={Homepage}/>
+            <PrivateRoute exact path="/" component={Homepage}/>
             <Route exact path="/about" component={About}/>
             <Route path="/shows" component={ShowsContainer} exact/>
             <PrivateRoute path="/shows/:id?" component={ShowContainer} exact/>
