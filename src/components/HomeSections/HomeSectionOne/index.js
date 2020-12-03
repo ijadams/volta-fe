@@ -12,7 +12,7 @@ const HomeSectionOne = () => {
         <p>
           <span className="text--mask">
               <span className="reveal">
-                  <span className="normal">Powered by OmniLive™</span><br/>The world’s leading All-in-one Interactive Multi Points of View Livestream Solution <br/> VOLTA is an intuitive Live Streaming and Video-On-Demand platform with patented multi-cam and multi-view technology so you can be the Director.
+                  <span className="normal">Powered by OmniLive™</span><br/>The world’s leading All-in-one Interactive Multi Points of View Livestream Solution <br/> VOLTA is an intuitive Live Streaming and Video-On-Demand platform with patented multi-cam and multi-view touch-player technology so you are the Director.
               </span>
           </span>
         </p>

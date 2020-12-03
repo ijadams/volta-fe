@@ -116,3 +116,20 @@ div#home--section--three {
         grid-template-columns: 1fr;
     }
 }
+
+.one--row.grid-container {
+    height: 800px;
+}
+
+.two-row.grid-container {
+    height: 1300px;
+}
+
+@media screen and (max-width: 768px) {
+    .one--row.grid-container {
+        height: auto;
+    }
+    .two-row.grid-container {
+        height: auto;
+    }
+}

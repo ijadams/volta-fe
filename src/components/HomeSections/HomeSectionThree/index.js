@@ -27,6 +27,16 @@ const HomeSectionThree = (props) => {
     );
   }
 
+  const getClassName = () => {
+    if (props.data.length < 4) {
+      return 'one--row grid-container'
+    }
+    if (props.data.length < 7) {
+      return 'two--row grid-container'
+    }
+    return 'grid-container';
+  }
+
   return (
     <div>
       <div id="home--section--three" className="home--section">
@@ -37,7 +47,7 @@ const HomeSectionThree = (props) => {
           </div>
         </TargetComponent>
 
-        <div className="grid-container">
+        <div className={getClassName()}>
           {items}
         </div>
       </div>
