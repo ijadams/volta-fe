@@ -33,9 +33,9 @@ const HeroComponent = ({ data }) => {
         />
         <video className="desktop" src="https://res.cloudinary.com/drnfburmr/video/upload/v1607013473/Crooked_Coast_HD_10sec_y9xjrr.mp4"
                onPlaying={handleVideoCallback} loop muted autoPlay></video>
-        <video className="mobile"
-               src="https://res.cloudinary.com/drnfburmr/video/upload/v1606412005/Crooked_Coast_HD_MOBILE_CLIP_scnwaw.mp4"
-               onPlaying={handleVideoCallback} loop muted autoPlay></video>
+        <img className="mobile" alt="crooked coast mobile gif"
+               src="https://ijadams.s3.amazonaws.com/volta/CrookeCoast_mobile.gif"
+               ></img>
         <div className="ocean">
           <div className="wave"></div>
           <div className="wave"></div>
