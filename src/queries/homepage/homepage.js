@@ -27,8 +27,9 @@ const HOMEPAGE_QUERY = gql `
           }
           created_at
         }
-  			partners {
+  		partners {
           name
+          link
           image {
             url
           }

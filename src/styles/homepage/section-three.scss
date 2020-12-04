@@ -41,6 +41,9 @@ div#home--section--three {
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    a {
+        border: 0 !important;
+    }
 }
 
 .item--container {
@@ -90,6 +93,7 @@ div#home--section--three {
             padding: 0;
             border: 0;
         }
+    
     }
 }
 

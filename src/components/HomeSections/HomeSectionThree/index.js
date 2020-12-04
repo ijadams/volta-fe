@@ -37,9 +37,11 @@ const HomeSectionThree = (props) => {
       <div className='item--container' key={index}>
         <TargetComponent>
           <div className='grid-img' style={{ backgroundImage: "url(" + imageUrl + ")" }}>
-            <div className='container'>
-              <p>{partner.name}</p>
-            </div>
+            <a href={partner.link} target="_blank">
+              <div className='container'>
+                <p>{partner.name}</p>
+              </div>
+            </a>
           </div>
         </TargetComponent>
       </div>
@@ -65,7 +67,6 @@ const HomeSectionThree = (props) => {
     }
     return 'grid-container';
   }
-
   return (
     <div>
       <div id="home--section--three" className="home--section">
@@ -82,12 +83,12 @@ const HomeSectionThree = (props) => {
 
         <TargetComponent>
           <div className="text--container">
-            <h1>Our Partners</h1>
+            <h1>Our Industry Partners</h1>
           </div>
         </TargetComponent>
 
         <div className={getPartnersClassName()}>
-          {shows}
+          {partners}
         </div>
 
       </div>
