@@ -6,7 +6,6 @@ import HomeSectionOne from '../../components/HomeSections/HomeSectionOne'
 import HomeSectionTwo from '../../components/HomeSections/HomeSectionTwo'
 import HomeSectionThree from '../../components/HomeSections/HomeSectionThree'
 import TargetComponent from '../../components/TargetComponent';
-import SHOWS_QUERY from "../../queries/shows/shows";
 
 export class Homepage extends Component {
     constructor() {
@@ -21,10 +20,10 @@ export class Homepage extends Component {
         return (
             <div>
                 <Query query={HOMEPAGE_QUERY} id={null}>
-                    {({data: {homepage}}) => {
+                    {({data}) => {
                         return (
                             <div>   
-                                <HeroComponent data={homepage} />
+                                <HeroComponent data={data.homepage} />
                                 <div className="home--body">
                                     <TargetComponent>
                                         <HomeSectionOne/>
@@ -33,12 +32,7 @@ export class Homepage extends Component {
                                         <HomeSectionTwo/>
                                     </TargetComponent>
                                     <TargetComponent>
-                                        <Query query={SHOWS_QUERY} id={null}>
-                                            {({data: {shows}}) => {
-                                                return (
-                                                  <HomeSectionThree data={shows}/>
-                                                )}}
-                                        </Query>
+                                    <HomeSectionThree shows={data.shows} partners={data.partners}/>
                                     </TargetComponent>
                                 </div>
                             </div>

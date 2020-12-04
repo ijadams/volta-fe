@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
 
-const HOMEPAGE_QUERY = gql`
+const HOMEPAGE_QUERY = gql `
     query Homepage {
         homepage {
             herotext
@@ -18,7 +18,22 @@ const HOMEPAGE_QUERY = gql`
             iframe_section_3_markdown
             iframe_section_4_markdown
         }
-    }
+  			shows {
+          id
+          show_name
+          show_content
+          show_image {
+            url
+          }
+          created_at
+        }
+  			partners {
+          name
+          image {
+            url
+          }
+        }
+}
 `;
 
 export default HOMEPAGE_QUERY;
