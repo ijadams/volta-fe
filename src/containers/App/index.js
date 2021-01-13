@@ -12,6 +12,7 @@ import PrivateRoute from "../../containers/PrivateRoute";
 import { About } from "../../containers/About";
 import ShowsContainer from "../../containers/Shows";
 import ShowContainer from '../../containers/Show';
+import LiveStreamContainer from '../../containers/LiveStream';
 
 export class App extends Component {
 
@@ -54,6 +55,7 @@ export class App extends Component {
             <PrivateRoute path="/shows/:id?" component={ShowContainer} exact/>
             <Route path="/auth/:authType/:id?" component={AuthPage}/>
             <PrivateRoute path="/category/:id" component={Category} exact/>
+            <PrivateRoute path="/live-stream" component={LiveStreamContainer} exact/>
             <Route component={NotFoundPage}/>
           </Switch>
         </main>
