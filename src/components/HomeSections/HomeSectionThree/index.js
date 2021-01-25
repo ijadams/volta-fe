@@ -71,26 +71,30 @@ const HomeSectionThree = (props) => {
     <div>
       <div id="home--section--three" className="home--section">
 
-        <TargetComponent>
-          <div className="text--container">
-            <h1>Our Collaborators</h1>
-          </div>
-        </TargetComponent>
+        <div class="three--container">
+          <TargetComponent>
+            <div className="text--container">
+              <h1>Our Collaborators</h1>
+            </div>
+          </TargetComponent>
 
-        <div className={getShowsClassName()}>
-          {shows}
+          <div className={getShowsClassName()}>
+            {shows}
+          </div>
         </div>
 
-        <TargetComponent>
-          <div className="text--container">
-            <h1>Our Industry Partners</h1>
-          </div>
-        </TargetComponent>
 
-        <div className={getPartnersClassName()}>
-          {partners}
-        </div>
+        <div class="three--container">
+            <TargetComponent>
+              <div className="text--container">
+                <h1>Our Industry Partners</h1>
+              </div>
+            </TargetComponent>
 
+            <div className={getPartnersClassName()}>
+              {partners}
+            </div>
+        </div>   
       </div>
     </div>
   );
