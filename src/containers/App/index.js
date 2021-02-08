@@ -13,6 +13,7 @@ import { About } from "../../containers/About";
 import ShowsContainer from "../../containers/Shows";
 import ShowContainer from '../../containers/Show';
 import LiveStreamContainer from '../../containers/LiveStream';
+import TicketSpiceContainer from '../../containers/TicketSpice'
 
 export class App extends Component {
 
@@ -56,6 +57,7 @@ export class App extends Component {
             <Route path="/auth/:authType/:id?" component={AuthPage}/>
             <PrivateRoute path="/category/:id" component={Category} exact/>
             <PrivateRoute path="/live-stream" component={LiveStreamContainer} exact/>
+            <PrivateRoute path="/ticket-spice" component={TicketSpiceContainer} exact/>
             <Route component={NotFoundPage}/>
           </Switch>
         </main>
