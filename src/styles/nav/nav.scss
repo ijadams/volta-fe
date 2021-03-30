@@ -4,12 +4,12 @@ nav {
   font-family: 'Heebo', sans-serif;
   font-weight: 100;
   letter-spacing: 1px;
-  height: 105px;
+  height: 70px;
 
   border-bottom: 10px solid;
   border-image-slice: 1;
-  border-width: 5px;
-  border-image-source: linear-gradient(90deg, rgba(215, 53, 1, 1) 0%, #d31027 33%, #ea384d 66%, rgba(215, 53, 1, 1) 100%);
+  border-bottom: 1px solid #5A5A5A;
+
   @media screen and (max-width: 768px) {
     border-left: 0;
     border-right: 0;
@@ -19,7 +19,20 @@ nav {
   button.uk-button.uk-button-default.uk-button-secondary {
     background-color: none !important;
   }
-  uk-navbar-nav>li:hover {
+  .uk-navbar-nav {
+    height: 100%;
+    > div {
+      height: 86px;
+      width: 0;
+      border-left: 1px solid #5A5A5A;
+      transform: rotate( -29deg);
+      margin-top: -10px;
+    }
+  }
+  .uk-navbar-nav > li {
+    padding: 0 3rem;
+  }
+  uk-navbar-nav > li:hover {
     a {
       color: red !important;
     }
@@ -28,11 +41,14 @@ nav {
     }
   }
   .uk-navbar-nav>li>a {
+    height: 100%;
     background-color: none;
     font-weight: 700;
+    letter-spacing: 1.65px;
+    min-height: auto;
     color: white !important;
     &:hover {
-      color: #ea384d !important;
+      color: #C148A5 !important;
     }
   }
   button.uk-button.uk-button-default.uk-button-secondary:hover {
@@ -74,8 +90,8 @@ nav {
 
   @media screen and (min-width: 768px) {
     position: fixed !important;
-    width: 92%;
-    padding: 0 4%;
+    width: 100%;
+    padding: 0;
     z-index: 5;
     display: flex !important;
     transition: background-color 0.5s ease-in;
@@ -106,7 +122,7 @@ nav {
   }
 
   img {
-    height: 60px;
+    height: 40px;
     width: auto;
   }
 

@@ -68,15 +68,17 @@ export class Nav extends Component {
 
                                     <div className="uk-navbar-right desktop">
                                         <ul className="uk-navbar-nav">
+                                            <div></div>
                                             <li>
                                                 <a
-                                                  href="/about"
+                                                  href="/artists"
                                                   rel="noopener noreferrer"
                                                   className="uk-link-reset"
                                                 >
-                                                    About
+                                                    Artists
                                                 </a>
                                             </li>
+                                            <div></div>
                                             <li>
                                                 <a
                                                   href="/shows"
@@ -86,14 +88,24 @@ export class Nav extends Component {
                                                     Shows
                                                 </a>
                                             </li>
+                                            <div></div>
                                             <li>
-                                                <a href={nav.signup_link}
-                                                   rel="noopener noreferrer"
-                                                   target="_blank">
-                                                    <button
-                                                      className="uk-button uk-button-default uk-button-secondary">
-                                                        {nav.signup_text}
-                                                    </button>
+                                                <a
+                                                  href="/search"
+                                                  rel="noopener noreferrer"
+                                                  className="uk-link-reset"
+                                                >
+                                                    Search
+                                                </a>
+                                            </li>
+                                            <div></div>
+                                            <li>
+                                                <a
+                                                  href="/demo"
+                                                  rel="noopener noreferrer"
+                                                  className="uk-link-reset"
+                                                >
+                                                    Demo
                                                 </a>
                                             </li>
                                         </ul>
