@@ -19,27 +19,41 @@ nav {
   button.uk-button.uk-button-default.uk-button-secondary {
     background-color: none !important;
   }
+
   .uk-navbar-nav {
     height: 100%;
-    > div {
+
+    >div {
       height: 86px;
       width: 0;
       border-left: 1px solid #5A5A5A;
-      transform: rotate( -29deg);
+      transform: rotate(-29deg);
       margin-top: -10px;
     }
   }
-  .uk-navbar-nav > li {
+
+  .uk-navbar-nav>li {
     padding: 0 3rem;
   }
+
+  .uk-navbar-left {
+    padding: 0 2rem;
+  }
+
+  li.desktop, li.omni {
+    padding: 0;
+  }
+
   uk-navbar-nav > li:hover {
     a {
       color: red !important;
     }
+
     a:hover {
       color: red !important;
     }
   }
+
   .uk-navbar-nav>li>a {
     height: 100%;
     background-color: none;
@@ -47,10 +61,12 @@ nav {
     letter-spacing: 1.65px;
     min-height: auto;
     color: white !important;
+
     &:hover {
       color: #C148A5 !important;
     }
   }
+
   button.uk-button.uk-button-default.uk-button-secondary:hover {
     color: #d73501 !important;
     border-color: #d73501 !important;
@@ -59,29 +75,37 @@ nav {
 
   .mobile {
     display: none;
+
     img {
-      width: 80px;
+      width: 140px;
       height: auto;
     }
   }
 
   .omni {
     padding-left: 0;
+
     a:hover {
       color: white !important;
+
       span {
         color: white !important;
+        opacity: 0.22;
       }
     }
+
     span {
-      font-weight: 700;
+      font-weight: 400;
       margin-left: -1rem;
       color: white !important;
+      opacity: 0.22;
     }
+
     img {
       margin-left: 1rem;
       width: 150px;
       height: auto;
+
       @media screen and (max-width: 768px) {
         width: 80px;
       }
@@ -96,6 +120,7 @@ nav {
     display: flex !important;
     transition: background-color 0.5s ease-in;
     background: #070707 !important;
+
     &.active {
       background: #070707 !important;
     }
@@ -122,8 +147,8 @@ nav {
   }
 
   img {
-    height: 40px;
-    width: auto;
+    height: auto;
+    width: 140px;
   }
 
   .nav--overlay {
@@ -142,6 +167,7 @@ nav {
     align-items: center;
     justify-content: center;
     background: #070707;
+
     &.active {
       visibility: visible;
       opacity: 1;
@@ -157,12 +183,14 @@ nav {
       border-top: 10px solid;
       border-image-slice: 1;
       border-width: 5px;
-      border-image-source: linear-gradient(90deg, rgba(215,53,1,1) 0%, #d31027 33%, #ea384d 66%, rgba(215,53,1,1) 100%);
+      border-image-source: linear-gradient(90deg, rgba(215, 53, 1, 1) 0%, #d31027 33%, #ea384d 66%, rgba(215, 53, 1, 1) 100%);
+
       img {
         width: 100px;
         margin-top: -2.5rem
       }
     }
+
     ul {
       list-style: none;
       margin: 0 auto;
@@ -195,6 +223,7 @@ nav {
         transition: all 2s cubic-bezier(.19, 1, .22, 1);
         animation: imagebulger 8s infinite;
       }
+
       a:hover {
         background-size: 100%;
       }
@@ -207,6 +236,7 @@ nav {
     z-index: 3;
     right: 1rem;
     top: 2.5rem;
+
     .uk-icon {
       color: white;
     }
@@ -218,9 +248,12 @@ nav {
 }
 
 @keyframes imagebulger {
-  0%, 100% {
+
+  0%,
+  100% {
     background-size: 100%;
   }
+
   50% {
     background-size: 150%;
   }

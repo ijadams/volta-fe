@@ -14,6 +14,7 @@
       }
     }
   }
+
   @media screen and (max-width: 768px) {
     padding: 2rem;
     padding-top: 4rem;
@@ -21,5 +22,19 @@
     .button--container {
       margin-top: 300px;
     }
+  }
+}
+
+
+#home--section--one.still {
+  min-height: 250px;
+  border-bottom: 1px solid #5A5A5A;
+  span {
+    font-family: 'Gotham-Light', cursive;
+    font-size: 60px;
+    line-height: 60px !important;
+  }
+  span.light {
+    color: #FFFFFFB3;
   }
 }

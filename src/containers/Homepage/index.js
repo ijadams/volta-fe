@@ -1,11 +1,9 @@
 import React, {Component} from "react";
 import Query from "../../components/Query";
 import HOMEPAGE_QUERY from "../../queries/homepage/homepage";
-import HeroComponent from '../../components/Hero/index';
-import HomeSectionOne from '../../components/HomeSections/HomeSectionOne'
-import HomeSectionTwo from '../../components/HomeSections/HomeSectionTwo'
-import HomeSectionThree from '../../components/HomeSections/HomeSectionThree'
+import HeroStillComponent from '../../components/Hero/hero-still';
 import TargetComponent from '../../components/TargetComponent';
+import HomeSectionStillOne from '../../components/HomeSections/HomeSectionStillOne';
 
 export class Homepage extends Component {
     constructor() {
@@ -23,18 +21,12 @@ export class Homepage extends Component {
                     {({data}) => {
                         return (
                             <div>   
-                                <HeroComponent data={data.homepage} />
+                                <HeroStillComponent data={data.homepage} />
                                 <div className="home--body">
                                     <TargetComponent>
-                                        <HomeSectionOne/>
+                                        <HomeSectionStillOne/>
                                     </TargetComponent>
-                                    <TargetComponent>
-                                        <HomeSectionTwo/>
-                                    </TargetComponent>
-                                    <TargetComponent>
-                                    <HomeSectionThree shows={data.shows} partners={data.partners}/>
-                                    </TargetComponent>
-                                </div>
+                                 </div>
                             </div>
                         );
                     }}

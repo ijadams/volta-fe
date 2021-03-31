@@ -104,3 +104,46 @@
     transform: translate3d(0, 5px, 0);
   }
 }
+
+
+
+.hero--still {
+  width: 100%;
+  min-height: 655px;
+  background-image: url('https://res.cloudinary.com/ia-interactive/image/upload/v1617211528/urn_aaid_sc_US_7351386a-35ed-424b-a70e-62ca29f89123_bnz8tz.png');
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  > div {
+    img {
+      max-width: 500px;
+      display: block;
+      padding: 0;
+      margin: 0 auto;
+    }
+    #volta {
+      max-width: 600px;
+    }
+  }
+}
+
+.hero--still--wave {
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color:black;
+  border-top: 2px solid #C148A5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    position: relative;
+    width: 50%;
+    margin-top: -111px;
+    max-width: 800px;
+  }
+}

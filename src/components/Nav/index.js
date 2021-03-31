@@ -55,10 +55,10 @@ export class Nav extends Component {
                                     <div className="uk-navbar-left">
                                         <ul className="uk-navbar-nav">
                                             <li className="desktop">
-                                                <Link to="/"><img alt="4-Forty Logo" src="https://res.cloudinary.com/ia-interactive/image/upload/v1605303777/volta-2-orange-no-word_ittaff.png"/></Link>
+                                                <Link to="/"><img alt="4-Forty Logo" src="https://res.cloudinary.com/ia-interactive/image/upload/v1617211512/volta-nav_kebaaw.png"/></Link>
                                             </li>
                                             <li className="mobile">
-                                                <Link to="/"><img alt="4-Forty Logo" src="https://res.cloudinary.com/ia-interactive/image/upload/v1605303777/volta-2-orange-no-word_ittaff.png"/></Link>
+                                                <Link to="/"><img alt="4-Forty Logo" src="https://res.cloudinary.com/ia-interactive/image/upload/v1617211512/volta-nav_kebaaw.png"/></Link>
                                             </li>
                                             <li className="omni">
                                                 <a href="https://www.omnilive.tv/en/landing-page-us/" target="_blank" rel="noopener noreferrer"><span>+</span><img alt="omni-logo" src="https://res.cloudinary.com/drnfburmr/image/upload/v1606349328/Omnilive_LogoWhite300_lwomot.png"/></a>

@@ -9,6 +9,17 @@
 @import './shows/show';
 @import './footer/footer';
 
+@font-face {
+  font-family: 'Gotham';
+  src: url('https://ijadams.s3.amazonaws.com/volta/GothamHTF-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url('https://ijadams.s3.amazonaws.com/volta/GothamHTF-LightCondensed.otf');
+}
+
+
 html, body {
   height: 100%;
   width: 100%;
@@ -18,14 +29,14 @@ html, body {
 }
 
 body {
-  font-family: 'Heebo', sans-serif;
+  font-family: sans-serif;
   button {
     border-radius: 3px !important;
     font-weight: 400 !important;
     letter-spacing: 1px !important;
   }
   p, h1, h2, h3 {
-    font-family: 'Heebo', sans-serif;
+    font-family: sans-serif;
   }
   .normal {
     font-weight: 400;
